@@ -22,16 +22,7 @@ public class Grow : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (transform.localScale.x < maxSize)
-        {
-            transform.localScale *= 1 + growRate / 100;
-        }
-        else
-        {
-            var particles = Instantiate(popParticles, transform);
-            particles.transform.parent = null;
-            Destroy(gameObject);
-        }
+
     }
 
     void Update()
@@ -70,6 +61,20 @@ public class Grow : MonoBehaviour, IInteractable
             {
                 transform.localScale /= 1 + growRate / 1000;
             }
+        }
+    }
+
+    public void LookAt()
+    {
+        if (transform.localScale.x < maxSize)
+        {
+            transform.localScale *= 1 + growRate / 100;
+        }
+        else
+        {
+            var particles = Instantiate(popParticles, transform);
+            particles.transform.parent = null;
+            Destroy(gameObject);
         }
     }
 }
