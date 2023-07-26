@@ -697,7 +697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadEvent: 1
   UnloadEvent: 2
-  Banks: []
+  Banks:
+  - Master
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &1468467212
