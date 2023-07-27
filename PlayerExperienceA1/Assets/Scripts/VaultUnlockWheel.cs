@@ -7,13 +7,15 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 {
     [SerializeField] GameObject wheel;
     [SerializeField] float rotationSpeed;
+    [SerializeField] float wheelTickIncrements;
 
     [SerializeField] bool startWheel;
 
     FMOD.Studio.EventInstance wheelTickSound;
+    FMOD.Studio.EventInstance pinUnlockSound;
 
-    float wheelTickIncrement;
-    float lastRotation;
+    float wheelTickTimer;
+    float tickCount;
 
     public void Interact()
     {
@@ -29,12 +31,28 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     {
         if (startWheel) 
         {
-            //wheel.transform.Rotate(new Vector3(0,1,0) * rotationSpeed * Time.deltaTime);
-
-            if (wheel.transform.rotation.x != lastRotation)
+            if (wheelTickTimer > 0) 
             {
-                wheelTickIncrement += Mathf.Abs(Mathf.Abs(wheel.transform.rotation.x) - Mathf.Abs(lastRotation));
-                lastRotation = wheel.transform.rotation.x;
+                wheelTickTimer -= Time.deltaTime;
+            }
+            else
+            {
+                if (tickCount == 3)
+                {
+                    pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
+                    pinUnlockSound.start();
+                    pinUnlockSound.release();
+                }
+                else 
+                {
+                    wheelTickSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultWheelTick");
+                    wheelTickSound.start();
+                    wheelTickSound.release();
+                }
+
+                wheelTickTimer = wheelTickIncrements;
+
+                tickCount++;
             }
 
             wheel.transform.RotateAround(wheel.transform.position, Vector3.forward, rotationSpeed * Time.deltaTime);
@@ -44,21 +62,6 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                 rotationSpeed *= -1;
 
             }
-
-            if (wheelTickIncrement * Mathf.Rad2Deg > 10)
-            {
-                wheelTickSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultWheelTick");
-                wheelTickSound.start();
-                wheelTickSound.release();
-
-                wheelTickIncrement = 0;
-            }
-
-            //Debug.Log("Wheel tick rot: " + wheelTickIncrement);
-            Debug.Log("transform rot: " + wheelTickIncrement * Mathf.Rad2Deg);
         }
-
     }
-
-
 }
