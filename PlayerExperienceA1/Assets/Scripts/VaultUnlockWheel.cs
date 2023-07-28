@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +9,9 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     [SerializeField] GameObject wheel;
     [SerializeField] float rotationSpeed;
     [SerializeField] float wheelTickIncrements;
+    [SerializeField] int amountOfPins;
+    [SerializeField] int minTicks;
+    [SerializeField] int maxTicks;
 
     [SerializeField] bool startWheel;
 
@@ -16,10 +20,20 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
     float wheelTickTimer;
     float tickCount;
+    public int[] pinNumbers;
+    int rotationNumber;
 
+    void Start()
+    {
+        pinNumbers= new int[amountOfPins];
+    }
     public void Interact()
     {
-        startWheel = true;  
+        startWheel = true;
+
+        GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
+
+        rotationNumber= 0;
     }
 
     public void LookAt()
@@ -39,7 +53,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
             {
                 tickCount++;
 
-                if (tickCount == 4)
+                if (pinNumbers[rotationNumber] == tickCount)
                 {
                     pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                     pinUnlockSound.start();
@@ -59,17 +73,40 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
             if (Input.GetKeyDown(KeyCode.Q)) 
             {
-                if (tickCount ==4)
+                if (pinNumbers[rotationNumber] == tickCount)
                 {
                     rotationSpeed *= -1;
                     tickCount = 0;
-                    Debug.Log("GOT IT");
+
+                    if (rotationNumber == amountOfPins)
+                    {
+                        Debug.Log("Door Unlocked");
+                    }
+                    else
+                    {
+                        rotationNumber++;
+                    }
                 }
                 else
                 {
                     rotationSpeed *= -1;
+                    Debug.Log("Reset");
+                    ResetWheel();
                 }
             }
         }
+    }
+
+    void GeneratePinNumbers(int minRange, int MaxRange, int countOfIteration, int[] storageArray)
+    {
+        for (int i = 0; i < countOfIteration; i++) 
+        {
+            storageArray[i] = Random.Range(minRange, MaxRange);
+        }
+    }
+
+    void ResetWheel() 
+    { 
+        
     }
 }
