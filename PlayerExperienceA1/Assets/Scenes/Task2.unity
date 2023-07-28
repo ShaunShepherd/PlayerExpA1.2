@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 749264005}
-  rotationSpeed: 50
-  wheelTickIncrements: 0.5
+  rotationSpeed: 40
+  wheelTickIncrements: 0.8
   startWheel: 0
 --- !u!1 &573400778
 GameObject:

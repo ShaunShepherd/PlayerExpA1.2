@@ -37,7 +37,9 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
             }
             else
             {
-                if (tickCount == 3)
+                tickCount++;
+
+                if (tickCount == 4)
                 {
                     pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                     pinUnlockSound.start();
@@ -51,16 +53,22 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                 }
 
                 wheelTickTimer = wheelTickIncrements;
-
-                tickCount++;
             }
 
             wheel.transform.RotateAround(wheel.transform.position, Vector3.forward, rotationSpeed * Time.deltaTime);
 
             if (Input.GetKeyDown(KeyCode.Q)) 
             {
-                rotationSpeed *= -1;
-
+                if (tickCount ==4)
+                {
+                    rotationSpeed *= -1;
+                    tickCount = 0;
+                    Debug.Log("GOT IT");
+                }
+                else
+                {
+                    rotationSpeed *= -1;
+                }
             }
         }
     }
