@@ -17,15 +17,20 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
     FMOD.Studio.EventInstance wheelTickSound;
     FMOD.Studio.EventInstance pinUnlockSound;
+    FMOD.Studio.EventInstance vaultLocked;
 
     float wheelTickTimer;
     float tickCount;
     public int[] pinNumbers;
     int rotationNumber;
 
+    Quaternion startingRotation;
+
     void Start()
     {
         pinNumbers= new int[amountOfPins];
+
+        startingRotation = wheel.transform.rotation;
     }
     public void Interact()
     {
@@ -89,7 +94,6 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                 }
                 else
                 {
-                    rotationSpeed *= -1;
                     Debug.Log("Reset");
                     ResetWheel();
                 }
@@ -106,7 +110,28 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     }
 
     void ResetWheel() 
-    { 
-        
+    {
+        vaultLocked = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultLocked(failed)");
+        vaultLocked.start();
+        vaultLocked.release();
+
+        StartCoroutine(WheelFailedDelay());
+    }
+
+    IEnumerator WheelFailedDelay()
+    {
+        startWheel = false;
+
+        yield return new WaitForSeconds(1);
+
+        startWheel = true;
+
+        GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
+
+        rotationNumber = 0;
+
+        tickCount = 0;
+
+        wheel.transform.rotation = startingRotation;
     }
 }
