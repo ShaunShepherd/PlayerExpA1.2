@@ -7,7 +7,8 @@ using UnityEngine;
 public class VaultUnlockWheel : MonoBehaviour, IInteractable
 {
     public bool startWheel;
-    public bool playerInRange; 
+    public bool playerInRange;
+    public int rotationNumber;
 
     [SerializeField] GameObject wheel;
     [SerializeField] float rotationSpeed;
@@ -23,7 +24,6 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     float wheelTickTimer;
     float tickCount;
     public int[] pinNumbers;
-    int rotationNumber;
 
     Quaternion startingRotation;
 
