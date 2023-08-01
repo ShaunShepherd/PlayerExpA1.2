@@ -6,14 +6,15 @@ using UnityEngine;
 
 public class VaultUnlockWheel : MonoBehaviour, IInteractable
 {
+    public bool startWheel;
+    public bool playerInRange; 
+
     [SerializeField] GameObject wheel;
     [SerializeField] float rotationSpeed;
     [SerializeField] float wheelTickIncrements;
     [SerializeField] int amountOfPins;
     [SerializeField] int minTicks;
     [SerializeField] int maxTicks;
-
-    [SerializeField] bool startWheel;
 
     FMOD.Studio.EventInstance wheelTickSound;
     FMOD.Studio.EventInstance pinUnlockSound;
@@ -63,6 +64,10 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                     pinUnlockSound.start();
                     pinUnlockSound.release();
+                }
+                else if (pinNumbers[rotationNumber] < tickCount)
+                {
+                    ResetWheel();
                 }
                 else 
                 {
