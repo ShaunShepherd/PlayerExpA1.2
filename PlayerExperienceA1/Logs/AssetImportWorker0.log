@@ -174,3 +174,9 @@ Received Import Request.
   path: Assets/Models/ValutDoor.mb
   artifactKey: Guid(d83f64a4724f29e458c6d92463914609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Models/ValutDoor.mb using Guid(d83f64a4724f29e458c6d92463914609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf7fb9fe742ba29dbbe5cc20fac3066') in 0.234284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2054.067490 seconds.
+  path: Assets/Models/VaultDoor.fbx
+  artifactKey: Guid(c19e38977f48e8746936055045dc8783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/VaultDoor.fbx using Guid(c19e38977f48e8746936055045dc8783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b6c32342d76df34fba9a10443d4cbc') in 0.118597 seconds 
