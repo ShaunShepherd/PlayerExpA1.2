@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool torchEquipt;
+
     [Header("Movement Variables")]
     [SerializeField] float moveSpeed;
     [SerializeField] float playerHeight;
@@ -58,7 +60,18 @@ public class PlayerMovement : MonoBehaviour
 
     void MovePlayer()
     {
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        if (torchEquipt)
+        {
+            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+            moveDirection.x = 0;
+            moveDirection.y = 0;
+        }
+        else
+        {
+            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        }
+
         rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
     }
 
@@ -78,5 +91,10 @@ public class PlayerMovement : MonoBehaviour
             Vector3 clampedVelocity = flatVelocity.normalized * moveSpeed;
             rb.velocity = new Vector3(clampedVelocity.x, rb.velocity.y, clampedVelocity.z);
         }
+    }
+
+    public void MoveToPos(Transform targetPos)
+    {
+        transform.position = new Vector3(targetPos.position.x, 0, targetPos.position.z);
     }
 }

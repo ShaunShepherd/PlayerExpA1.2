@@ -3,38 +3,58 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TorchMove : MonoBehaviour, IInteractable
+public class TorchMove : MonoBehaviour
 {
     [SerializeField] TMP_Text uiText;
+    [SerializeField] GameObject player;
+    [SerializeField] float movementDrag;
+    [SerializeField] Transform playerHolder;
 
-    bool equipt;
+    bool equipt = false;
     bool playerInTrigger;
-    void IInteractable.Interact()
-    {
-        if (equipt)
-        {
-            equipt = false;
-        }
-        else
-        {
-            equipt = true;
-        }
-    }
 
-    void IInteractable.LookAt()
-    {
-        
-    }
+    float distanceOffset;
+
 
     void Update()
     {
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
+        {
+            if (equipt)
+            {
+                equipt= false;
+
+                player.GetComponent<PlayerMovement>().torchEquipt = false;
+
+                uiText.gameObject.SetActive(false);
+            }
+            else
+            { 
+                equipt= true;
+
+                PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+
+                playerMovement.torchEquipt = true;
+
+                playerMovement.MoveToPos(playerHolder);
+
+                distanceOffset = player.transform.position.z - transform.position.z;
+            }
+        }
+
+
+        if (playerInTrigger && !equipt)
+        {
+            uiText.text = "Press E to move torch";
+        }
+
         if (equipt) 
         {
-            if (Input.GetKeyUp(KeyCode.E)) 
-            {
-                equipt = false;
-            }
+            uiText.text = "Press E to let go";
+
             Debug.Log("move");
+
+            MoveWithPlayer();
         }
     }
 
@@ -43,6 +63,8 @@ public class TorchMove : MonoBehaviour, IInteractable
         if (collider.CompareTag("Player"))
         {
             playerInTrigger = true;
+
+            uiText.gameObject.SetActive(true);
         }
     }
 
@@ -53,4 +75,10 @@ public class TorchMove : MonoBehaviour, IInteractable
             playerInTrigger = false;
         }
     }
+
+    void MoveWithPlayer()
+    {
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.transform.position.z - distanceOffset), movementDrag);
+        //transform.Translate(Vector3.up * (playerTrans.position.z - transform.position.z));
+    }    
 }
