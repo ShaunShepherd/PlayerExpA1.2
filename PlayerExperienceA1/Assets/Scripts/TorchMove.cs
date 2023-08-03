@@ -9,12 +9,19 @@ public class TorchMove : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] float movementDrag;
     [SerializeField] Transform playerHolder;
-
+    [SerializeField] float maxDistance;
+     
     bool equipt = false;
     bool playerInTrigger;
 
     float distanceOffset;
+    float minDistance;
 
+    private void Start()
+    {
+        minDistance = transform.position.z;
+        maxDistance = transform.position.z - maxDistance;
+    }
 
     void Update()
     {
@@ -24,9 +31,12 @@ public class TorchMove : MonoBehaviour
             {
                 equipt= false;
 
-                player.GetComponent<PlayerMovement>().torchEquipt = false;
+                if (!playerInTrigger) 
+                {
+                    uiText.gameObject.SetActive(false);
+                }
 
-                uiText.gameObject.SetActive(false);
+                player.GetComponent<PlayerMovement>().torchEquipt = false;
             }
             else
             { 
@@ -42,6 +52,14 @@ public class TorchMove : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.E) && !playerInTrigger && equipt) 
+        {
+            equipt = false;
+
+            uiText.gameObject.SetActive(false);
+
+            player.GetComponent<PlayerMovement>().torchEquipt = false;
+        }
 
         if (playerInTrigger && !equipt)
         {
@@ -73,12 +91,18 @@ public class TorchMove : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             playerInTrigger = false;
+
+            if (!equipt)
+            {
+                uiText.gameObject.SetActive(false);
+            }
         }
     }
 
     void MoveWithPlayer()
     {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.transform.position.z - distanceOffset), movementDrag);
-        //transform.Translate(Vector3.up * (playerTrans.position.z - transform.position.z));
+        float targetZPos = Mathf.Clamp((player.transform.position.z - distanceOffset), maxDistance, minDistance);
+
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, targetZPos), movementDrag);
     }    
 }

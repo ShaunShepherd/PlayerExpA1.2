@@ -95,6 +95,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveToPos(Transform targetPos)
     {
-        transform.position = new Vector3(targetPos.position.x, 0, targetPos.position.z);
+        transform.position = new Vector3(targetPos.position.x, transform.position.y, targetPos.position.z);
     }
 }
