@@ -5,12 +5,14 @@ using TMPro;
 
 public class TorchMove : MonoBehaviour
 {
+    public bool unlocked;
     [SerializeField] TMP_Text uiText;
     [SerializeField] GameObject player;
     [SerializeField] float movementDrag;
     [SerializeField] Transform playerHolder;
     [SerializeField] float maxDistance;
     [SerializeField] float unlockDistance;
+    [SerializeField] float distanceBuffer;
      
     bool equipt = false;
     bool playerInTrigger;
@@ -22,6 +24,9 @@ public class TorchMove : MonoBehaviour
     {
         minDistance = transform.position.z;
         maxDistance = transform.position.z - maxDistance;
+
+        unlockDistance = transform.position.z - unlockDistance;
+
     }
 
     void Update()
@@ -74,6 +79,15 @@ public class TorchMove : MonoBehaviour
             Debug.Log("move");
 
             MoveWithPlayer();
+        }
+
+        if (transform.position.z > (unlockDistance - distanceBuffer) && transform.position.z < (unlockDistance + distanceBuffer))
+        {
+            unlocked = true;
+        }
+        else
+        {
+            unlocked = false;
         }
     }
 
