@@ -10,6 +10,7 @@ public class TorchMove : MonoBehaviour
     [SerializeField] float movementDrag;
     [SerializeField] Transform playerHolder;
     [SerializeField] float maxDistance;
+    [SerializeField] float unlockDistance;
      
     bool equipt = false;
     bool playerInTrigger;
