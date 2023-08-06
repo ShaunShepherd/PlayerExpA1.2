@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9295bcc5bce04a54695787503768d955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exp: {fileID: 8530142133712647035, guid: f9749670fd169a445aa661c6aff9c4b6, type: 3}
+  exp: {fileID: 6040685702054818791, guid: 7ae1800c7008b4e40a5d899bab0f6b08, type: 3}
   expForce: 800
   radius: 5
 --- !u!1 &964318881

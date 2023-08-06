@@ -10,7 +10,7 @@ public class ExplosionForce : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         GameObject _exp = Instantiate(exp, transform.position, transform.rotation);
-        Destroy(_exp,3);
+        Destroy(_exp,2);
         knockBack();
         Destroy(gameObject);
     }
