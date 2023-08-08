@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exp: {fileID: 6040685702054818791, guid: 7ae1800c7008b4e40a5d899bab0f6b08, type: 3}
-  expForce: 800
+  expForce: 8000
   radius: 5
 --- !u!1 &964318881
 GameObject:
