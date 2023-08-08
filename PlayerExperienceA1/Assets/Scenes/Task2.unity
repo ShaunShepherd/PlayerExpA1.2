@@ -153,8 +153,6 @@ Transform:
   m_Children:
   - {fileID: 4726417593757725909}
   - {fileID: 1778689560977308166}
-  - {fileID: 3527768624362291234}
-  - {fileID: 4433623463231884076}
   m_Father: {fileID: 8919395924578876226}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 177.323, z: 0}
@@ -1827,10 +1825,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7803269158299799108}
   m_LocalRotation: {x: -0, y: 0.99971145, z: 0, w: -0.024023106}
-  m_LocalPosition: {x: 2.1709833, y: 1.0875607, z: -0.056629162}
+  m_LocalPosition: {x: 2.1709833, y: 1.087561, z: -0.056629162}
   m_LocalScale: {x: 204.74419, y: 204.74425, z: 204.74419}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3527768624362291234}
+  - {fileID: 4433623463231884076}
   m_Father: {fileID: 35840655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1857,13 +1857,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098397834743847910}
-  m_LocalRotation: {x: -0, y: 0.99971145, z: 0, w: -0.024023106}
-  m_LocalPosition: {x: 2.172842, y: 1.0875607, z: -0.3739951}
-  m_LocalScale: {x: 204.74419, y: 204.74425, z: 210.18785}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000083521954, y: 0, z: 0.0015478358}
+  m_LocalScale: {x: 1, y: 1, z: 1.0265876}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 35840655}
-  m_RootOrder: 2
+  m_Father: {fileID: 1778689560977308166}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3993494335374762720
 MeshFilter:
@@ -1884,6 +1884,7 @@ GameObject:
   - component: {fileID: 1190232324541309074}
   - component: {fileID: 3993494335374762720}
   - component: {fileID: 6204188618458308564}
+  - component: {fileID: 6204188618458308565}
   m_Layer: 0
   m_Name: MainWall
   m_TagString: Untagged
@@ -1898,13 +1899,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724557571250340033}
-  m_LocalRotation: {x: -0, y: 0.99971145, z: 0, w: -0.024023106}
-  m_LocalPosition: {x: 3.3730457, y: 0.37588102, z: -0.25397444}
-  m_LocalScale: {x: 123.541145, y: 123.541176, z: 126.825836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0059105675, y: -0.0034759443, z: 0.00068075006}
+  m_LocalScale: {x: 0.60339266, y: 0.60339266, z: 0.61943555}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 35840655}
-  m_RootOrder: 3
+  m_Father: {fileID: 1778689560977308166}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4726417593757725909
 Transform:
@@ -2026,6 +2027,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6204188618458308565
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4289129240510842876}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7803269158299799108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2121,7 @@ GameObject:
   - component: {fileID: 8919395924578876227}
   - component: {fileID: 8919395924578876230}
   - component: {fileID: 8919395924578876231}
+  - component: {fileID: 8919395924578876232}
   m_Layer: 0
   m_Name: VaultDoorClean
   m_TagString: Untagged
@@ -2285,3 +2307,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &8919395924578876232
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107570021265793528}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0df9731e6a9a46e42ac7f9aac27c93e6, type: 2}
+  m_Animations:
+  - {fileID: 0}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
