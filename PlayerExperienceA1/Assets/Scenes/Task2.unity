@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360ccacb9edfe2644b889309c244a615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torchEquipt: 0
   moveSpeed: 12
   playerHeight: 2
   groundedAllowance: 0.2
@@ -2233,8 +2234,8 @@ MonoBehaviour:
   playerInRange: 0
   rotationNumber: 0
   wheel: {fileID: 724557571250340033}
-  rotationSpeed: 40
-  wheelTickIncrements: 0.8
+  rotationSpeed: 50
+  wheelTickIncrements: 0.5
   amountOfPins: 5
   minTicks: 4
   maxTicks: 12
