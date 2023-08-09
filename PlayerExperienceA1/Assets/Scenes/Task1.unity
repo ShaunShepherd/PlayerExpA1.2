@@ -1707,6 +1707,7 @@ GameObject:
   - component: {fileID: 1663787138}
   - component: {fileID: 1663787136}
   - component: {fileID: 1663787137}
+  - component: {fileID: 1663787139}
   m_Layer: 0
   m_Name: Pufferfish
   m_TagString: Untagged
@@ -1727,7 +1728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growRate: 0.2
-  maxSize: 2
+  maxSize: 3
   shrinkDelay: 0.5
   popParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
 --- !u!4 &1663787135
@@ -1804,6 +1805,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveableArea: 2
   moveSpeed: 0.01
+--- !u!95 &1663787139
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663787133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07e3ed1cecb4993489b7c184ad87651d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1726283267
 PrefabInstance:
   m_ObjectHideFlags: 0

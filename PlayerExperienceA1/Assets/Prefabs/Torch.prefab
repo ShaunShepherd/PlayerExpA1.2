@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8728139935897584962}
   m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -3.21, y: 2.52, z: -20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70351624, y: 0.70351624, z: 0.70351624}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8728139936199188712}
@@ -60,12 +60,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2eaabd6732a8b438f93d5365222731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlocked: 0
   uiText: {fileID: 0}
   player: {fileID: 0}
   movementDrag: 0.1
   playerHolder: {fileID: 8728139936231134239}
   maxDistance: 8
   unlockDistance: 0
+  distanceBuffer: 0
 --- !u!1 &8728139936196543443
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 8728139936199188713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.42, z: -0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 25.1115, y: 25.1115, z: 25.1115}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8728139936196543442}
@@ -202,7 +204,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8728139936199188713}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 3369316746193770658, guid: 223d9a84d858dc14cb805da520fb9acb, type: 3}
 --- !u!23 &8728139936199188710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -223,7 +225,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 5561349426305759274, guid: 223d9a84d858dc14cb805da520fb9acb, type: 3}
+  - {fileID: 8748892135801146194, guid: 223d9a84d858dc14cb805da520fb9acb, type: 3}
+  - {fileID: 8368722655750445499, guid: 223d9a84d858dc14cb805da520fb9acb, type: 3}
+  - {fileID: 6034957751646507721, guid: 223d9a84d858dc14cb805da520fb9acb, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -255,10 +260,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.04140588
+  m_Height: 0.14071275
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000075955185, y: 0.0031843549, z: -0.0018050654}
 --- !u!1 &8728139936231134240
 GameObject:
   m_ObjectHideFlags: 0
