@@ -259,3 +259,9 @@ Received Import Request.
   path: Assets/Scenes/Task3.unity
   artifactKey: Guid(69a28b3fae6f4e54ca3f3c600008aeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/Task3.unity using Guid(69a28b3fae6f4e54ca3f3c600008aeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1649cc5bef69bc8b024df86e1edae3') in 0.007816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 214.436242 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(20c9db0aa100ee845a54566f1957f9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(20c9db0aa100ee845a54566f1957f9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c0c5b37a8d09da2aa3ee91bbc5a3f0') in 0.010598 seconds 
