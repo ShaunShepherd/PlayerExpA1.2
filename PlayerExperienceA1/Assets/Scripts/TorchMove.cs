@@ -20,6 +20,9 @@ public class TorchMove : MonoBehaviour
     float distanceOffset;
     float minDistance;
 
+    FMOD.Studio.EventInstance pickUpSound;
+    FMOD.Studio.EventInstance dropSound;
+
     private void Start()
     {
         minDistance = transform.position.z;
@@ -55,6 +58,10 @@ public class TorchMove : MonoBehaviour
                 playerMovement.MoveToPos(playerHolder);
 
                 distanceOffset = player.transform.position.z - transform.position.z;
+
+                pickUpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchPickup");
+                pickUpSound.start();
+                pickUpSound.release();
             }
         }
 
