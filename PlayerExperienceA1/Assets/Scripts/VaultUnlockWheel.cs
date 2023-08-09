@@ -29,10 +29,11 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     public int[] pinNumbers;
 
     Quaternion startingRotation;
-
+    Animator animator;
     void Start()
     {
         pinNumbers= new int[amountOfPins];
+        animator = GetComponent
 
         startingRotation = wheel.transform.rotation;
     }
