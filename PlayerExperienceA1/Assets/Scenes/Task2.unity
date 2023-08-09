@@ -1343,6 +1343,51 @@ Transform:
   m_Father: {fileID: 323944698}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1622360470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622360471}
+  - component: {fileID: 1622360472}
+  m_Layer: 0
+  m_Name: noice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622360471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622360470}
+  m_LocalRotation: {x: 0, y: -0.9999998, z: -0, w: -0.00066046417}
+  m_LocalPosition: {x: 0.00052, y: 0.00012, z: 0.00063}
+  m_LocalScale: {x: 0.0048841415, y: 0.004884142, z: 0.0048841415}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1778689560977308166}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1622360472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622360470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.526469, y: 4.9959764, z: 0.8578711}
+  m_Center: {x: -0.0073168282, y: -0.24181128, z: 0.07106445}
 --- !u!1 &1703904007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +1877,7 @@ Transform:
   m_Children:
   - {fileID: 3527768624362291234}
   - {fileID: 4433623463231884076}
+  - {fileID: 1622360471}
   m_Father: {fileID: 35840655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2236,7 +2282,7 @@ MonoBehaviour:
   wheel: {fileID: 724557571250340033}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
-  amountOfPins: 5
+  amountOfPins: 1
   minTicks: 4
   maxTicks: 12
   unlockParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
