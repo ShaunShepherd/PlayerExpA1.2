@@ -9,13 +9,10 @@ public class ExplosionForce : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Tagret")
-        {
-            GameObject _exp = Instantiate(exp, transform.position, transform.rotation);
-            Destroy(_exp,2);
-            knockBack();
-            Destroy(gameObject);
-        }
+        GameObject _exp = Instantiate(exp, transform.position, transform.rotation);
+        Destroy(_exp,2);
+        knockBack();
+        Destroy(gameObject);
     }
     void knockBack()
     {
