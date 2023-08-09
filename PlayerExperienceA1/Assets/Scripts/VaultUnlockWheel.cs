@@ -28,12 +28,16 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     float tickCount;
     public int[] pinNumbers;
 
+    bool doorOpened;
+
     Quaternion startingRotation;
     Animator animator;
+
     void Start()
     {
         pinNumbers= new int[amountOfPins];
-        animator = GetComponent
+        
+        animator = GetComponent<Animator>();
 
         startingRotation = wheel.transform.rotation;
     }
@@ -53,65 +57,71 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
     void Update()
     {
-        if (startWheel) 
+        if (!doorOpened) 
         {
-            if (wheelTickTimer > 0) 
+            if (startWheel)
             {
-                wheelTickTimer -= Time.deltaTime;
-            }
-            else
-            {
-                tickCount++;
-
-                if (pinNumbers[rotationNumber] == tickCount)
+                if (wheelTickTimer > 0)
                 {
-                    pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
-                    pinUnlockSound.start();
-                    var particles = Instantiate(clickParticles, transform);
-                    particles.transform.parent = null;
-                    pinUnlockSound.release();
-                }
-                else if (pinNumbers[rotationNumber] < tickCount)
-                {
-                    ResetWheel();
-                }
-                else 
-                {
-                    wheelTickSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultWheelTick");
-                    wheelTickSound.start();
-                    wheelTickSound.release();
-                }
-
-                wheelTickTimer = wheelTickIncrements;
-            }
-
-            wheel.transform.RotateAround(wheel.transform.position, Vector3.forward, rotationSpeed * Time.deltaTime);
-
-            if (Input.GetKeyDown(KeyCode.Q)) 
-            {
-                if (pinNumbers[rotationNumber] == tickCount)
-                {
-                    rotationSpeed *= -1;
-                    tickCount = 0;
-
-                    if (rotationNumber == amountOfPins)
-                    {
-                        Debug.Log("Door Unlocked");
-                        var particles = Instantiate(unlockParticles, transform);
-                        particles.transform.parent = null;
-                    }
-                    else
-                    {
-                        rotationNumber++;
-                    }
+                    wheelTickTimer -= Time.deltaTime;
                 }
                 else
                 {
-                    Debug.Log("Reset");
-                    ResetWheel();
+                    tickCount++;
+
+                    if (pinNumbers[rotationNumber] == tickCount)
+                    {
+                        pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
+                        pinUnlockSound.start();
+                        var particles = Instantiate(clickParticles, transform);
+                        particles.transform.parent = null;
+                        pinUnlockSound.release();
+                    }
+                    else if (pinNumbers[rotationNumber] < tickCount)
+                    {
+                        ResetWheel();
+                    }
+                    else
+                    {
+                        wheelTickSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultWheelTick");
+                        wheelTickSound.start();
+                        wheelTickSound.release();
+                    }
+
+                    wheelTickTimer = wheelTickIncrements;
+                }
+
+                wheel.transform.RotateAround(wheel.transform.position, Vector3.forward, rotationSpeed * Time.deltaTime);
+
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    if (pinNumbers[rotationNumber] == tickCount)
+                    {
+                        rotationSpeed *= -1;
+                        tickCount = 0;
+
+                        if (rotationNumber == amountOfPins - 1)
+                        {
+                            animator.SetTrigger("DoorOpen");
+                            var particles = Instantiate(unlockParticles, transform);
+                            particles.transform.parent = null;
+
+                            doorOpened = true;
+                        }
+                        else
+                        {
+                            rotationNumber++;
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Reset");
+                        ResetWheel();
+                    }
                 }
             }
         }
+  
     }
 
     void GeneratePinNumbers(int minRange, int MaxRange, int countOfIteration, int[] storageArray)
