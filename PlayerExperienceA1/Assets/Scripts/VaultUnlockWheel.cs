@@ -16,6 +16,9 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     [SerializeField] int amountOfPins;
     [SerializeField] int minTicks;
     [SerializeField] int maxTicks;
+    [SerializeField] ParticleSystem unlockParticles;
+    [SerializeField] ParticleSystem clickParticles;
+    [SerializeField] ParticleSystem failParticles;
 
     FMOD.Studio.EventInstance wheelTickSound;
     FMOD.Studio.EventInstance pinUnlockSound;
@@ -26,10 +29,11 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     public int[] pinNumbers;
 
     Quaternion startingRotation;
-
+    Animator animator;
     void Start()
     {
         pinNumbers= new int[amountOfPins];
+        animator = GetComponent
 
         startingRotation = wheel.transform.rotation;
     }
@@ -63,6 +67,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                 {
                     pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                     pinUnlockSound.start();
+                    var particles = Instantiate(clickParticles, transform);
+                    particles.transform.parent = null;
                     pinUnlockSound.release();
                 }
                 else if (pinNumbers[rotationNumber] < tickCount)
@@ -91,6 +97,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     if (rotationNumber == amountOfPins)
                     {
                         Debug.Log("Door Unlocked");
+                        var particles = Instantiate(unlockParticles, transform);
+                        particles.transform.parent = null;
                     }
                     else
                     {
