@@ -53,11 +53,6 @@ public class Grow : MonoBehaviour, IInteractable
             if (shrinkDelayTimer > shrinkDelay)
             {
                 Shrink();
-
-                inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                inflateSound.release();
-
-                inflateSoundPlaying = false;
             }
         }
 
@@ -68,6 +63,11 @@ public class Grow : MonoBehaviour, IInteractable
     {
         if (transform.localScale.x > startingScale)
         {
+            inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            inflateSound.release();
+
+            inflateSoundPlaying = false;
+
             transform.localScale /= 1 + growRate / 1000;
 
             growing = false;
@@ -80,6 +80,10 @@ public class Grow : MonoBehaviour, IInteractable
         {
             transform.localScale *= 1 + growRate / 100;
 
+            float pitch = (10 / (maxSize - startingScale)) * (transform.localScale.x - startingScale);
+
+            inflateSound.setParameterByName("Pitch", pitch);
+
             if (!inflateSoundPlaying)
             {
                 inflateSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishExpand");
@@ -90,6 +94,11 @@ public class Grow : MonoBehaviour, IInteractable
         }
         else
         {
+            inflateSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            inflateSound.release();
+
+            inflateSoundPlaying = false;
+
             var particles = Instantiate(popParticles, transform);
             particles.transform.parent = null;
             Destroy(gameObject);
