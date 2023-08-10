@@ -12,6 +12,7 @@ public class Grow : MonoBehaviour, IInteractable
     [SerializeField] float maxSize;
     [SerializeField] float shrinkDelay;
     [SerializeField] ParticleSystem popParticles;
+    [SerializeField] CameraShakeController camShake;
 
     float previousScale;
     float startingScale;
@@ -29,6 +30,8 @@ public class Grow : MonoBehaviour, IInteractable
         startingScale = transform.transform.localScale.x;
 
         previousScale = startingScale;
+
+        camShake = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShakeController>();
     }
 
     public void Interact()
@@ -119,6 +122,8 @@ public class Grow : MonoBehaviour, IInteractable
             inflateSound.release();
 
             inflateSoundPlaying = false;
+
+            camShake.ShakeCamera(4, 1);
 
             var particles = Instantiate(popParticles, transform);
             particles.transform.parent = null;
