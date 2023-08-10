@@ -2053,6 +2053,8 @@ GameObject:
   - component: {fileID: 993526196}
   - component: {fileID: 993526195}
   - component: {fileID: 993526194}
+  - component: {fileID: 993526197}
+  - component: {fileID: 993526198}
   m_Layer: 0
   m_Name: FishTankWall (8)
   m_TagString: Untagged
@@ -2125,6 +2127,50 @@ Transform:
   m_Father: {fileID: 895849526}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -89.994}
+--- !u!114 &993526197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993526192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Untagged
+  EventReference:
+    Guid:
+      Data1: 397353592
+      Data2: 1170007442
+      Data3: -502769491
+      Data4: 1726252976
+    Path: event:/Pufferfish/SpawnSplash
+  Event: 
+  PlayEvent: 3
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!65 &993526198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993526192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 1.0000623}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0.000030517578}
 --- !u!1 &997056454
 GameObject:
   m_ObjectHideFlags: 0

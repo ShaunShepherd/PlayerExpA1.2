@@ -16,6 +16,10 @@ public class MoveToRandLocation : MonoBehaviour
     Grow grow;
     Rigidbody rb;
 
+    bool swimSoundPlaying;
+
+    FMOD.Studio.EventInstance swimSound;
+
     void Start()
     {
         newTarget = startingPos;
@@ -36,33 +40,52 @@ public class MoveToRandLocation : MonoBehaviour
                 newTarget = GenRandPos(startingPos, moveableArea);
                 LookAt(newTarget);
                 animator.SetBool("Swimming", true);
+
+                if (!swimSoundPlaying)
+                {
+                    swimSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishSwim");
+                    swimSound.start();
+
+                    swimSoundPlaying = true;
+                }
             }
         }
         else if (!grow.growing && Vector3.Distance(transform.position, startingPos) < .2)
         {
-            Debug.Log("Fish is home");
             LookAt(player.transform.position);
             animator.SetBool("Swimming", false);
+
+            swimSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            swimSound.release();
+
+            swimSoundPlaying = false;
         }
         else
         {
-            Debug.Log("fish is trying to get ho,e");
-
-        
             newTarget = startingPos;
             LookAt(newTarget);
             animator.SetBool("Swimming", true);
+
+            if (!swimSoundPlaying)
+            {
+                swimSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishSwim");
+                swimSound.start();
+
+                swimSoundPlaying = true;
+            }
         }
-
-        
-
+    
         transform.position = Vector3.Lerp(transform.position, newTarget, moveSpeed * Time.deltaTime);
     }
 
-    void FixedUpdate()
+    void OnDestroy()
     {
-        //rb.velocity = (transform.position - newTarget).normalized * moveSpeed * Time.fixedDeltaTime;
+        swimSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        swimSound.release();
+
+        swimSoundPlaying = false;
     }
+
     Vector3 GenRandPos(Vector3 centrePoint, float range)
     {
         Vector3 randomPos;

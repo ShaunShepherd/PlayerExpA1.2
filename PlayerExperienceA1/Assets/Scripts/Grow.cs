@@ -6,6 +6,7 @@ using UnityEngine;
 public class Grow : MonoBehaviour, IInteractable
 {
     public bool growing = false;
+    public bool pop;
 
     [SerializeField] float growRate;
     [SerializeField] float maxSize;
@@ -17,8 +18,11 @@ public class Grow : MonoBehaviour, IInteractable
     float shrinkDelayTimer;
 
     bool inflateSoundPlaying;
+    bool deflateSoundPlaying;
+
 
     FMOD.Studio.EventInstance inflateSound;
+    FMOD.Studio.EventInstance deflateSound;
 
     void Start()
     {
@@ -68,9 +72,25 @@ public class Grow : MonoBehaviour, IInteractable
 
             inflateSoundPlaying = false;
 
+
+            if (!deflateSoundPlaying)
+            {
+                deflateSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishDeflate");
+                deflateSound.start();
+
+                deflateSoundPlaying = true;
+            }
+
             transform.localScale /= 1 + growRate / 1000;
 
             growing = false;
+        }
+        else
+        {
+            deflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            deflateSound.release();
+
+            deflateSoundPlaying = false;
         }
     }
 
@@ -94,6 +114,7 @@ public class Grow : MonoBehaviour, IInteractable
         }
         else
         {
+            pop = true;
             inflateSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             inflateSound.release();
 
