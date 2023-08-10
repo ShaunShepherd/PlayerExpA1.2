@@ -16,6 +16,10 @@ public class Grow : MonoBehaviour, IInteractable
     float startingScale;
     float shrinkDelayTimer;
 
+    bool inflateSoundPlaying;
+
+    FMOD.Studio.EventInstance inflateSound;
+
     void Start()
     {
         startingScale = transform.transform.localScale.x;
@@ -44,6 +48,11 @@ public class Grow : MonoBehaviour, IInteractable
 
             shrinkDelayTimer += Time.deltaTime;
 
+            inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            inflateSound.release();
+
+            inflateSoundPlaying = false;
+
             if (shrinkDelayTimer > shrinkDelay)
             {
                 Shrink();
@@ -68,6 +77,14 @@ public class Grow : MonoBehaviour, IInteractable
         if (transform.localScale.x < maxSize)
         {
             transform.localScale *= 1 + growRate / 100;
+
+            if (!inflateSoundPlaying)
+            {
+                inflateSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishExpand");
+                inflateSound.start();
+
+                inflateSoundPlaying = true;
+            }
         }
         else
         {
