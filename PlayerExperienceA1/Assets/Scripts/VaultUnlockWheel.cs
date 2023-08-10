@@ -73,7 +73,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     {
                         pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                         pinUnlockSound.start();
-                        var particles = Instantiate(clickParticles, transform);
+                        var particles = Instantiate(clickParticles, transform);                       
                         particles.transform.parent = null;
                         pinUnlockSound.release();
                     }
