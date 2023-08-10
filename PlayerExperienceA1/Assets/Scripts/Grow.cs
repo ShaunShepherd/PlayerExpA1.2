@@ -48,14 +48,16 @@ public class Grow : MonoBehaviour, IInteractable
 
             shrinkDelayTimer += Time.deltaTime;
 
-            inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            inflateSound.release();
 
-            inflateSoundPlaying = false;
 
             if (shrinkDelayTimer > shrinkDelay)
             {
                 Shrink();
+
+                inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                inflateSound.release();
+
+                inflateSoundPlaying = false;
             }
         }
 
