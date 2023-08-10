@@ -10,7 +10,8 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
-        menuOverlay.SetActive(false); 
+        menuOverlay.SetActive(false);
+        gamePaused = false;
     }
     void Update()
     {
@@ -42,7 +43,8 @@ public class Menu : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0);
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
     }
 
     public void ExitGame()
