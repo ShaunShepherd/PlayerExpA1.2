@@ -28,7 +28,7 @@ public class UITextOnTrigger : MonoBehaviour
             }
             else
             {
-                uiText.text = "Press 'Q' When the Pin is in Place";
+                uiText.text = "press 'q' when the pin is in place";
             }
         }
     }

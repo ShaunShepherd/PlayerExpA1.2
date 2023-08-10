@@ -91,12 +91,12 @@ public class TorchMove : MonoBehaviour
 
         if (playerInTrigger && !equipt)
         {
-            uiText.text = "Press E to move torch";
+            uiText.text = "press 'e' to move torch";
         }
 
         if (equipt) 
         {
-            uiText.text = "Press E to let go";
+            uiText.text = "press 'e' to let go";
 
             MoveWithPlayer();
         }
