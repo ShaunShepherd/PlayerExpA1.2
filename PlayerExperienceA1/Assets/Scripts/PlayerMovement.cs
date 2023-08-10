@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement Variables")]
     [SerializeField] float moveSpeed;
+    [SerializeField] float slowMovement;
     [SerializeField] float playerHeight;
     [SerializeField] float groundedAllowance;
     [SerializeField] LayerMask groundLayer;
@@ -72,7 +73,14 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
         }
 
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
+        if (torchEquipt)
+        {
+            rb.AddForce(moveDirection.normalized * slowMovement * 10, ForceMode.Force);
+        }
+        else
+        {
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
+        }
     }
 
     bool IsGrounded()

@@ -487,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torchEquipt: 0
   moveSpeed: 12
+  slowMovement: 4
   playerHeight: 2
   groundedAllowance: 0.2
   groundLayer:
@@ -671,8 +672,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -1038,8 +1043,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -1216,8 +1225,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -1940,8 +1953,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -2062,8 +2079,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 8.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -2629,8 +2650,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -2843,8 +2868,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
@@ -3365,8 +3394,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
+      propertyPath: hummBuffer
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
