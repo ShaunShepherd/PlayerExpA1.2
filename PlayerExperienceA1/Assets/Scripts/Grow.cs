@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class Grow : MonoBehaviour, IInteractable
 {
+    public bool growing;
+
     [SerializeField] float growRate;
     [SerializeField] float maxSize;
     [SerializeField] float shrinkDelay;
     [SerializeField] ParticleSystem popParticles;
 
-    bool growing;
     float previousScale;
     float startingScale;
     float shrinkDelayTimer;
@@ -39,7 +40,6 @@ public class Grow : MonoBehaviour, IInteractable
         }
         else
         {
-            growing = false;
             previousScale = transform.localScale.x;
 
             shrinkDelayTimer += Time.deltaTime;
@@ -55,12 +55,11 @@ public class Grow : MonoBehaviour, IInteractable
 
     void Shrink()
     {
-        if (!growing)
+        if (transform.localScale.x > startingScale)
         {
-            if (transform.localScale.x > startingScale)
-            {
-                transform.localScale /= 1 + growRate / 1000;
-            }
+            transform.localScale /= 1 + growRate / 1000;
+
+            growing = false;
         }
     }
 

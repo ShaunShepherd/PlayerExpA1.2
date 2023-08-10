@@ -183,7 +183,6 @@ public class TorchMove : MonoBehaviour
         {
             float pitch = (12/hummBuffer) * Mathf.Abs(Mathf.Abs(Mathf.Abs(unlockDistance) - Mathf.Abs(transform.position.z)) - hummBuffer);
 
-            Debug.Log("Pitch is: " + pitch);
             closeHummSound.setParameterByName("Pitch", pitch);
             if (!closeHummPlaying)
             {
