@@ -13,12 +13,21 @@ public class TorchMove : MonoBehaviour
     [SerializeField] float maxDistance;
     [SerializeField] float unlockDistance;
     [SerializeField] float distanceBuffer;
+    [SerializeField] float hummBuffer;
      
     bool equipt = false;
     bool playerInTrigger;
+    bool dragSoundPlaying;
+    bool closeHummPlaying;
 
     float distanceOffset;
     float minDistance;
+
+    FMOD.Studio.EventInstance pickUpSound;
+    FMOD.Studio.EventInstance dropSound;
+    FMOD.Studio.EventInstance dragSound;
+    FMOD.Studio.EventInstance closeHummSound;
+    FMOD.Studio.EventInstance correctHummSound;
 
     private void Start()
     {
@@ -43,6 +52,15 @@ public class TorchMove : MonoBehaviour
                 }
 
                 player.GetComponent<PlayerMovement>().torchEquipt = false;
+
+                dropSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchDrop");
+                dropSound.start();
+                dropSound.release();
+
+                dragSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                dragSound.release();
+
+                dragSoundPlaying = false;
             }
             else
             { 
@@ -55,6 +73,10 @@ public class TorchMove : MonoBehaviour
                 playerMovement.MoveToPos(playerHolder);
 
                 distanceOffset = player.transform.position.z - transform.position.z;
+
+                pickUpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchPickup");
+                pickUpSound.start();
+                pickUpSound.release();
             }
         }
 
@@ -76,18 +98,33 @@ public class TorchMove : MonoBehaviour
         {
             uiText.text = "Press E to let go";
 
-            Debug.Log("move");
-
             MoveWithPlayer();
         }
 
-        if (transform.position.z > (unlockDistance - distanceBuffer) && transform.position.z < (unlockDistance + distanceBuffer))
+        if (transform.position.z > (unlockDistance - distanceBuffer) && transform.position.z < (unlockDistance + distanceBuffer) && !equipt)
         {
+            if (closeHummPlaying)
+            {
+                correctHummSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/CorrectHumm");
+                correctHummSound.start();
+                correctHummSound.release();
+
+                closeHummSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                closeHummSound.release();
+
+                closeHummPlaying = false;
+            }
+
             unlocked = true;
         }
         else
         {
             unlocked = false;
+        }
+
+        if (equipt)
+        {
+            PlayHummWhenClose();
         }
     }
 
@@ -118,6 +155,49 @@ public class TorchMove : MonoBehaviour
     {
         float targetZPos = Mathf.Clamp((player.transform.position.z - distanceOffset), maxDistance, minDistance);
 
+        if (Mathf.Abs(player.GetComponent<Rigidbody>().velocity.z) > 1)
+        {
+            if (!dragSoundPlaying)
+            {
+                dragSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchDrag");
+                dragSound.start();
+
+                dragSoundPlaying = true;
+            }
+        }
+        else
+        {
+            dragSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            dragSound.release();
+
+            dragSoundPlaying = false;
+        }
+
+
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, targetZPos), movementDrag);
     }    
+
+    void PlayHummWhenClose()
+    {
+        if (transform.position.z > (unlockDistance - hummBuffer) && transform.position.z < (unlockDistance + hummBuffer))
+        {
+            float pitch = (12/hummBuffer) * Mathf.Abs(Mathf.Abs(Mathf.Abs(unlockDistance) - Mathf.Abs(transform.position.z)) - hummBuffer);
+
+            closeHummSound.setParameterByName("Pitch", pitch);
+            if (!closeHummPlaying)
+            {
+                closeHummSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/CloseHumm");
+                closeHummSound.start();
+
+                closeHummPlaying = true;
+            }
+        }
+        else
+        {
+            closeHummSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            closeHummSound.release();
+
+            closeHummPlaying = false;
+        }
+    }
 }

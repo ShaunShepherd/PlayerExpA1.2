@@ -7,27 +7,83 @@ public class MoveToRandLocation : MonoBehaviour
 {
     [SerializeField] float moveableArea;
     [SerializeField] float moveSpeed;
+    [SerializeField] GameObject player;
+    [SerializeField] Animator animator;
 
+    public Vector3 startingPos;
+    Vector3 newTarget = Vector3.zero;
 
-    Vector3 startingPos;
+    Grow grow;
+    Rigidbody rb;
 
-    Vector3 newTarget;
+    bool swimSoundPlaying;
+
+    FMOD.Studio.EventInstance swimSound;
 
     void Start()
     {
-        startingPos = transform.position;
+        newTarget = startingPos;
 
-        newTarget = GenRandPos(startingPos, moveableArea);
+        grow = GetComponent<Grow>();
+
+        rb = GetComponent<Rigidbody>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, newTarget) < .1)
+        if (grow.growing)
         {
-            newTarget = GenRandPos(startingPos, moveableArea);
-        }
+            if (Vector3.Distance(transform.position, newTarget) < .2)
+            {
+                newTarget = GenRandPos(startingPos, moveableArea);
+                LookAt(newTarget);
+                animator.SetBool("Swimming", true);
 
-        MoveToPos(newTarget);
+                if (!swimSoundPlaying)
+                {
+                    swimSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishSwim");
+                    swimSound.start();
+
+                    swimSoundPlaying = true;
+                }
+            }
+        }
+        else if (!grow.growing && Vector3.Distance(transform.position, startingPos) < .2)
+        {
+            LookAt(player.transform.position);
+            animator.SetBool("Swimming", false);
+
+            swimSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            swimSound.release();
+
+            swimSoundPlaying = false;
+        }
+        else
+        {
+            newTarget = startingPos;
+            LookAt(newTarget);
+            animator.SetBool("Swimming", true);
+
+            if (!swimSoundPlaying)
+            {
+                swimSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishSwim");
+                swimSound.start();
+
+                swimSoundPlaying = true;
+            }
+        }
+    
+        transform.position = Vector3.Lerp(transform.position, newTarget, moveSpeed * Time.deltaTime);
+    }
+
+    void OnDestroy()
+    {
+        swimSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        swimSound.release();
+
+        swimSoundPlaying = false;
     }
 
     Vector3 GenRandPos(Vector3 centrePoint, float range)
@@ -39,8 +95,15 @@ public class MoveToRandLocation : MonoBehaviour
         return randomPos;
     }
 
-    void MoveToPos(Vector3 target)
+    void LookAt(Vector3 target)
     {
-        transform.position = Vector3.Lerp(transform.position, target, moveSpeed);
+        Vector3 targetVector = target - transform.position;
+
+        Quaternion lookAt = Quaternion.LookRotation(targetVector * -1);
+
+      
+        //Quaternion.Lerp(transform.rotation, lookAt, 5 * Time.deltaTime)
+        transform.rotation = lookAt;
     }
+
 }
