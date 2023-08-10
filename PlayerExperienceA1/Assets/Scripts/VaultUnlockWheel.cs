@@ -58,15 +58,15 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
             player.GetComponent<PlayerMovement>().torchEquipt = true;
 
             unlocking = true;
+
+            player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
         }
         else
         {
-            player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
-
             if (Input.GetKeyDown(KeyCode.E))
             {
                 unlocking = false;
-                ResetWheel();
+                StartCoroutine(StopWheel());
                 startWheel = false;
 
                 player.GetComponent<PlayerMovement>().torchEquipt = false;
@@ -163,6 +163,19 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
         vaultLocked.release();
 
         StartCoroutine(WheelFailedDelay());
+    }
+
+    IEnumerator StopWheel()
+    {
+        startWheel = false;
+
+        yield return new WaitForSeconds(1);
+
+        rotationNumber = 0;
+
+        tickCount = 0;
+
+        wheel.transform.rotation = startingRotation;
     }
 
     IEnumerator WheelFailedDelay()
