@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Grow : MonoBehaviour, IInteractable
 {
-    public bool growing;
+    public bool growing = false;
 
     [SerializeField] float growRate;
     [SerializeField] float maxSize;
@@ -19,6 +19,8 @@ public class Grow : MonoBehaviour, IInteractable
     void Start()
     {
         startingScale = transform.transform.localScale.x;
+
+        previousScale = startingScale;
     }
 
     public void Interact()
@@ -28,8 +30,6 @@ public class Grow : MonoBehaviour, IInteractable
 
     void Update()
     {
-
-
         if (transform.localScale.x > previousScale)
         {
             growing = true;

@@ -7,7 +7,7 @@ public class MoveToRandLocation : MonoBehaviour
 {
     [SerializeField] float moveableArea;
     [SerializeField] float moveSpeed;
-
+    [SerializeField] GameObject player;
 
     Vector3 startingPos= Vector3.zero;
     Vector3 newTarget = Vector3.zero;
@@ -19,7 +19,7 @@ public class MoveToRandLocation : MonoBehaviour
     {
         startingPos = transform.position;
 
-        newTarget = GenRandPos(startingPos, moveableArea);
+        newTarget = startingPos;
 
         grow = GetComponent<Grow>();
 
@@ -30,19 +30,35 @@ public class MoveToRandLocation : MonoBehaviour
     {
         if (grow.growing)
         {
-            if (Vector3.Distance(transform.position, newTarget) < 1)
+            if (Vector3.Distance(transform.position, newTarget) < .2)
             {
                 newTarget = GenRandPos(startingPos, moveableArea);
+                LookAt(newTarget);
             }
-
-            MoveToPos(newTarget);
+        }
+        else if (!grow.growing && Vector3.Distance(transform.position, startingPos) < .2)
+        {
+            Debug.Log("Fish is home");
+            LookAt(player.transform.position);
         }
         else
         {
-            MoveToPos(startingPos);
+            Debug.Log("fish is trying to get ho,e");
+
+        
+            newTarget = startingPos;
+            LookAt(newTarget);
         }
+
+        
+
+        transform.position = Vector3.Lerp(transform.position, newTarget, moveSpeed * Time.deltaTime);
     }
 
+    void FixedUpdate()
+    {
+        //rb.velocity = (transform.position - newTarget).normalized * moveSpeed * Time.fixedDeltaTime;
+    }
     Vector3 GenRandPos(Vector3 centrePoint, float range)
     {
         Vector3 randomPos;
@@ -52,19 +68,15 @@ public class MoveToRandLocation : MonoBehaviour
         return randomPos;
     }
 
-    void MoveToPos(Vector3 target)
+    void LookAt(Vector3 target)
     {
-        Vector3 targetVector = (target + transform.position).normalized * moveSpeed;
+        Vector3 targetVector = target - transform.position;
 
-        if (Vector3.Distance(transform.position, target) < .5)
-        {
-            rb.velocity = Vector3.zero;
-        }
-        else
-        {
-            rb.velocity = new Vector3(targetVector.x, targetVector.y, 0);
-        }
+        Quaternion lookAt = Quaternion.LookRotation(targetVector * -1);
 
-        //rb.AddForce(((target + transform.position)).normalized * moveSpeed * 10, ForceMode.Force);
+      
+        //Quaternion.Lerp(transform.rotation, lookAt, 5 * Time.deltaTime)
+        transform.rotation = lookAt;
     }
+
 }
