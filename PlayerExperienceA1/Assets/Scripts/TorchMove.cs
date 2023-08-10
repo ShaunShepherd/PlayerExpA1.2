@@ -16,12 +16,14 @@ public class TorchMove : MonoBehaviour
      
     bool equipt = false;
     bool playerInTrigger;
+    bool dragSoundPlaying;
 
     float distanceOffset;
     float minDistance;
 
     FMOD.Studio.EventInstance pickUpSound;
     FMOD.Studio.EventInstance dropSound;
+    FMOD.Studio.EventInstance dragSound;
 
     private void Start()
     {
@@ -46,6 +48,10 @@ public class TorchMove : MonoBehaviour
                 }
 
                 player.GetComponent<PlayerMovement>().torchEquipt = false;
+
+                dropSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchDrop");
+                dropSound.start();
+                dropSound.release();
             }
             else
             { 
@@ -72,6 +78,11 @@ public class TorchMove : MonoBehaviour
             uiText.gameObject.SetActive(false);
 
             player.GetComponent<PlayerMovement>().torchEquipt = false;
+
+            dragSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            dragSound.release();
+
+            dragSoundPlaying = false;
         }
 
         if (playerInTrigger && !equipt)
@@ -124,6 +135,20 @@ public class TorchMove : MonoBehaviour
     void MoveWithPlayer()
     {
         float targetZPos = Mathf.Clamp((player.transform.position.z - distanceOffset), maxDistance, minDistance);
+
+
+
+        if (!dragSoundPlaying)
+        {
+            if (Mathf.Abs(Mathf.Abs(targetZPos) - Mathf.Abs(player.transform.position.z - distanceOffset)) > 0.01)
+            {
+                dragSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/TorchDrag");
+                dragSound.start();
+            }
+
+            dragSoundPlaying = true;
+        }
+
 
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, targetZPos), movementDrag);
     }    
