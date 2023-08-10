@@ -2282,7 +2282,7 @@ MonoBehaviour:
   wheel: {fileID: 724557571250340033}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
-  amountOfPins: 1
+  amountOfPins: 5
   minTicks: 4
   maxTicks: 12
   unlockParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
