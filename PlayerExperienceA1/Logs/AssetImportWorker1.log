@@ -618,3 +618,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 128237.695216 seconds.
+  path: Assets/Materials/Light.mat
+  artifactKey: Guid(53335456b6374bb488792a03ffd1824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Light.mat using Guid(53335456b6374bb488792a03ffd1824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8dcfcbee4ebda5ad635f17cc90f63c') in 0.090441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 247.268019 seconds.
+  path: Assets/Sprites/Explosion/SmallExplosion.png
+  artifactKey: Guid(a6e178eed0d7f514e92c51de163e298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Explosion/SmallExplosion.png using Guid(a6e178eed0d7f514e92c51de163e298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d4128954a66923099df0d0a8c11150') in 0.035927 seconds 
