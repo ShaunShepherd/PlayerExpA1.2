@@ -888,3 +888,33 @@ Received Import Request.
   path: Assets/Materials/Gold.mat
   artifactKey: Guid(ec6de2ae23cd7cf429fd6c5af984fdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/Gold.mat using Guid(ec6de2ae23cd7cf429fd6c5af984fdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82df67419911847658fadd0a8793fda') in 0.009106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3631.404313 seconds.
+  path: Assets/Sprites/SmallExplosion.png
+  artifactKey: Guid(a6e178eed0d7f514e92c51de163e298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/SmallExplosion.png using Guid(a6e178eed0d7f514e92c51de163e298c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90a2615dc34a32d00696547aaeb7c1a') in 0.048974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.446122 seconds.
+  path: Assets/Sprites/CircleExplosion.png
+  artifactKey: Guid(a86a525b7a9671e41bd48a8cd9f4909d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CircleExplosion.png using Guid(a86a525b7a9671e41bd48a8cd9f4909d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18dca6e083870a573f1414fa7ecaae9') in 0.028095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 108.557346 seconds.
+  path: Assets/Sprites/CircleExplosion.png
+  artifactKey: Guid(a86a525b7a9671e41bd48a8cd9f4909d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/CircleExplosion.png using Guid(a86a525b7a9671e41bd48a8cd9f4909d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1b62c36f618fc9596d2c8cf9dcf91ba') in 0.014230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.404142 seconds.
+  path: Assets/Sprites/Explosion
+  artifactKey: Guid(bcf05ddd717f6ae489f182b778dbc408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Explosion using Guid(bcf05ddd717f6ae489f182b778dbc408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb05e3e764e5ca1eb5bf787f8bf3e9b') in 0.006927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.420277 seconds.
+  path: Assets/Materials/Gold.mat
+  artifactKey: Guid(ec6de2ae23cd7cf429fd6c5af984fdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Gold.mat using Guid(ec6de2ae23cd7cf429fd6c5af984fdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681021e980bd4b03732d2f2a45a8f893') in 0.014600 seconds 
