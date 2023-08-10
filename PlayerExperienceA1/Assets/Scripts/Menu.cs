@@ -12,6 +12,8 @@ public class Menu : MonoBehaviour
     {
         menuOverlay.SetActive(false);
         gamePaused = false;
+
+        Time.timeScale = 1;
     }
     void Update()
     {
