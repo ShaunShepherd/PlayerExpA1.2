@@ -20,7 +20,7 @@ public class UITextOnTrigger : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange)
+        if (playerInRange && !unlockWheel.doorOpened)
         {
             if (!unlockWheel.startWheel)
             {
@@ -34,7 +34,7 @@ public class UITextOnTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !unlockWheel.doorOpened)
         {
             uiText.gameObject.SetActive(true);
             playerInRange = true;

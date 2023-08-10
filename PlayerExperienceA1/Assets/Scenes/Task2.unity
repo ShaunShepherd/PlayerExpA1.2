@@ -5926,6 +5926,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762642948}
   m_Mesh: {fileID: -5378405701612855513, guid: 701ef67b5cbfa004dbb176bd961d04b7, type: 3}
+--- !u!1 &1769625383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769625384}
+  m_Layer: 0
+  m_Name: PlayerHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1769625384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769625383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0048789643, y: -0.0073262127, z: 0.061051775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8919395924578876226}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770904049
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,6 +7405,7 @@ GameObject:
   - component: {fileID: 2092152187}
   - component: {fileID: 2092152190}
   - component: {fileID: 2092152189}
+  - component: {fileID: 2092152191}
   m_Layer: 0
   m_Name: Vcam
   m_TagString: Untagged
@@ -7464,6 +7496,18 @@ MonoBehaviour:
   sensY: 400
   orientation: {fileID: 573400779}
   menu: {fileID: 1737525011}
+--- !u!114 &2092152191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092152186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20c9bbdb81baa141ad00691922c66b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2111729434
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,6 +8729,7 @@ Transform:
   m_Children:
   - {fileID: 1190232324541309074}
   - {fileID: 35840655}
+  - {fileID: 1769625384}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -8700,18 +8745,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1770ddb538ec74b9d28f9e6be85cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpened: 0
   startWheel: 0
   playerInRange: 0
   rotationNumber: 0
   wheel: {fileID: 724557571250340033}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
-  amountOfPins: 5
+  amountOfPins: 1
   minTicks: 4
   maxTicks: 12
   unlockParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
   clickParticles: {fileID: 5222348557320626952, guid: f9749670fd169a445aa661c6aff9c4b6, type: 3}
   failParticles: {fileID: 0}
+  player: {fileID: 323944697}
+  playerHolder: {fileID: 1769625384}
   pinNumbers: 
 --- !u!114 &8919395924578876228
 MonoBehaviour:
