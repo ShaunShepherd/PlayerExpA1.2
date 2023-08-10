@@ -5,19 +5,30 @@ using UnityEngine;
 
 public class Grow : MonoBehaviour, IInteractable
 {
+    public bool growing = false;
+    public bool pop;
+
     [SerializeField] float growRate;
     [SerializeField] float maxSize;
     [SerializeField] float shrinkDelay;
     [SerializeField] ParticleSystem popParticles;
 
-    bool growing;
     float previousScale;
     float startingScale;
     float shrinkDelayTimer;
 
+    bool inflateSoundPlaying;
+    bool deflateSoundPlaying;
+
+
+    FMOD.Studio.EventInstance inflateSound;
+    FMOD.Studio.EventInstance deflateSound;
+
     void Start()
     {
         startingScale = transform.transform.localScale.x;
+
+        previousScale = startingScale;
     }
 
     public void Interact()
@@ -27,8 +38,6 @@ public class Grow : MonoBehaviour, IInteractable
 
     void Update()
     {
-
-
         if (transform.localScale.x > previousScale)
         {
             growing = true;
@@ -39,10 +48,11 @@ public class Grow : MonoBehaviour, IInteractable
         }
         else
         {
-            growing = false;
             previousScale = transform.localScale.x;
 
             shrinkDelayTimer += Time.deltaTime;
+
+
 
             if (shrinkDelayTimer > shrinkDelay)
             {
@@ -55,12 +65,32 @@ public class Grow : MonoBehaviour, IInteractable
 
     void Shrink()
     {
-        if (!growing)
+        if (transform.localScale.x > startingScale)
         {
-            if (transform.localScale.x > startingScale)
+            inflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            inflateSound.release();
+
+            inflateSoundPlaying = false;
+
+
+            if (!deflateSoundPlaying)
             {
-                transform.localScale /= 1 + growRate / 1000;
+                deflateSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishDeflate");
+                deflateSound.start();
+
+                deflateSoundPlaying = true;
             }
+
+            transform.localScale /= 1 + growRate / 1000;
+
+            growing = false;
+        }
+        else
+        {
+            deflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            deflateSound.release();
+
+            deflateSoundPlaying = false;
         }
     }
 
@@ -69,9 +99,27 @@ public class Grow : MonoBehaviour, IInteractable
         if (transform.localScale.x < maxSize)
         {
             transform.localScale *= 1 + growRate / 100;
+
+            float pitch = (10 / (maxSize - startingScale)) * (transform.localScale.x - startingScale);
+
+            inflateSound.setParameterByName("Pitch", pitch);
+
+            if (!inflateSoundPlaying)
+            {
+                inflateSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishExpand");
+                inflateSound.start();
+
+                inflateSoundPlaying = true;
+            }
         }
         else
         {
+            pop = true;
+            inflateSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            inflateSound.release();
+
+            inflateSoundPlaying = false;
+
             var particles = Instantiate(popParticles, transform);
             particles.transform.parent = null;
             Destroy(gameObject);
