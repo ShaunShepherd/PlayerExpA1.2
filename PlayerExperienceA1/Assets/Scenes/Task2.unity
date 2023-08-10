@@ -1386,8 +1386,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.526469, y: 4.9959764, z: 0.8578711}
-  m_Center: {x: -0.0073168282, y: -0.24181128, z: 0.07106445}
+  m_Size: {x: 4.526469, y: 4.9959764, z: 1.7662079}
+  m_Center: {x: -0.007316872, y: -0.24181128, z: 0.52523285}
 --- !u!1 &1703904007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   minTicks: 4
   maxTicks: 12
   unlockParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
-  clickParticles: {fileID: 5222348557320626952, guid: f9749670fd169a445aa661c6aff9c4b6, type: 3}
+  clickParticles: {fileID: 5264426707864522395, guid: 810f15e13cd73af47a92da54f357e174, type: 3}
   failParticles: {fileID: 0}
   pinNumbers: 
 --- !u!114 &8919395924578876228
