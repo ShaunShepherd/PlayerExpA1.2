@@ -8,6 +8,10 @@ public class DoorUnlock : MonoBehaviour
 
     Animator animator;
 
+    bool doorOpened;
+
+    FMOD.Studio.EventInstance openSound;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -24,11 +28,25 @@ public class DoorUnlock : MonoBehaviour
             }
         }
 
-        if (tochesUnlocked >= torches.Count)
+        if (tochesUnlocked >= torches.Count && !doorOpened)
         {
-            Debug.Log("Door Unlcoked");
 
-            animator.SetTrigger("OpenDoor");
+            StartCoroutine(OpenDoor());
+
+
+            doorOpened = true;
         }
+    }
+
+    IEnumerator OpenDoor()
+    {
+        openSound = FMODUnity.RuntimeManager.CreateInstance("event:/Torchs/Unlock");
+
+        openSound.start();
+        openSound.release();
+
+        yield return new WaitForSeconds(7);
+
+        animator.SetTrigger("OpenDoor");
     }
 }

@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 3
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -1044,7 +1044,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -1226,7 +1226,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 3
+      value: 5.3
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -1954,7 +1954,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -2080,7 +2080,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 4
+      value: 8.2
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -2651,7 +2651,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 2
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -2869,7 +2869,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
@@ -3395,7 +3395,7 @@ PrefabInstance:
       objectReference: {fileID: 262027969}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: hummBuffer
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
