@@ -8,8 +8,9 @@ public class MoveToRandLocation : MonoBehaviour
     [SerializeField] float moveableArea;
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject player;
+    [SerializeField] Animator animator;
 
-    Vector3 startingPos= Vector3.zero;
+    public Vector3 startingPos;
     Vector3 newTarget = Vector3.zero;
 
     Grow grow;
@@ -17,13 +18,13 @@ public class MoveToRandLocation : MonoBehaviour
 
     void Start()
     {
-        startingPos = transform.position;
-
         newTarget = startingPos;
 
         grow = GetComponent<Grow>();
 
         rb = GetComponent<Rigidbody>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -34,12 +35,14 @@ public class MoveToRandLocation : MonoBehaviour
             {
                 newTarget = GenRandPos(startingPos, moveableArea);
                 LookAt(newTarget);
+                animator.SetBool("Swimming", true);
             }
         }
         else if (!grow.growing && Vector3.Distance(transform.position, startingPos) < .2)
         {
             Debug.Log("Fish is home");
             LookAt(player.transform.position);
+            animator.SetBool("Swimming", false);
         }
         else
         {
@@ -48,6 +51,7 @@ public class MoveToRandLocation : MonoBehaviour
         
             newTarget = startingPos;
             LookAt(newTarget);
+            animator.SetBool("Swimming", true);
         }
 
         
