@@ -59,6 +59,19 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
             unlocking = true;
         }
+        else
+        {
+            player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                unlocking = false;
+                ResetWheel();
+                startWheel = false;
+
+                player.GetComponent<PlayerMovement>().torchEquipt = false;
+            }
+        }
     }
 
     public void LookAt()
@@ -70,19 +83,6 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     {
         if (!doorOpened) 
         {
-            if (unlocking)
-            {
-                player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
-
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    unlocking = false;
-                    ResetWheel();
-                    startWheel = false;
-
-                    player.GetComponent<PlayerMovement>().torchEquipt = false;
-                }
-            }
             if (startWheel)
             {
                 if (wheelTickTimer > 0)
