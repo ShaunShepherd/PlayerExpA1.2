@@ -31,6 +31,11 @@ public class UITextOnTrigger : MonoBehaviour
                 uiText.text = "press 'q' when the pin is in place";
             }
         }
+
+        if (unlockWheel.doorOpened)
+        {
+            uiText.gameObject.SetActive(false);
+        }
     }
     void OnTriggerEnter(Collider other)
     {

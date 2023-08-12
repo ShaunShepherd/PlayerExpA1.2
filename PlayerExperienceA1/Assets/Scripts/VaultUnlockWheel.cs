@@ -31,7 +31,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     float tickCount;
     public int[] pinNumbers;
 
-    bool unlocking;
+    public bool unlocking;
 
 
     Quaternion startingRotation;
@@ -47,29 +47,32 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        if (!unlocking)
+        if (!doorOpened)
         {
-            startWheel = true;
-
-            GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
-
-            rotationNumber = 0;
-
-            player.GetComponent<PlayerMovement>().torchEquipt = true;
-
-            unlocking = true;
-
-            player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (!unlocking)
             {
-                unlocking = false;
-                StartCoroutine(StopWheel());
-                startWheel = false;
+                startWheel = true;
 
-                player.GetComponent<PlayerMovement>().torchEquipt = false;
+                GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
+
+                rotationNumber = 0;
+
+                player.GetComponent<PlayerMovement>().torchEquipt = true;
+
+                unlocking = true;
+
+                player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    unlocking = false;
+                    StartCoroutine(StopWheel());
+                    startWheel = false;
+
+                    player.GetComponent<PlayerMovement>().torchEquipt = false;
+                }
             }
         }
     }
@@ -131,6 +134,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                             particles.transform.parent = null;
 
                             doorOpened = true;
+
+                            rotationNumber++;
                         }
                         else
                         {
@@ -144,6 +149,10 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     }
                 }
             }
+        }
+        else
+        {
+            player.GetComponent<PlayerMovement>().torchEquipt = false;
         }
   
     }
