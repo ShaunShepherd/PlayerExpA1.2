@@ -63,7 +63,7 @@ public class Menu : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Task1");
+        SceneManager.LoadScene("Task3");
     }
 
     public void LoadMenu()

@@ -31,10 +31,6 @@ public class DoorUnlock : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Minus))
-        {
-            StartCoroutine(OpenDoor());
-        }
         int tochesUnlocked = 0;
 
         foreach(GameObject torch in torches)
