@@ -7,31 +7,38 @@ public class Menu : MonoBehaviour
 {
     public bool gamePaused;
     [SerializeField] GameObject menuOverlay;
+    [SerializeField] bool isMenu;
 
     void Start()
     {
-        menuOverlay.SetActive(false);
-        gamePaused = false;
+        if (!isMenu)
+        {
+            menuOverlay.SetActive(false);
+            gamePaused = false;
+        }
 
         Time.timeScale = 1;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
+        if (!isMenu)
         {
-            if (!gamePaused)
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
             {
-                Time.timeScale = 0;
-                menuOverlay.SetActive(true);
+                if (!gamePaused)
+                {
+                    Time.timeScale = 0;
+                    menuOverlay.SetActive(true);
 
-                gamePaused = true;
-            }
-            else
-            {
-                Time.timeScale = 1;
-                menuOverlay.SetActive(false);
+                    gamePaused = true;
+                }
+                else
+                {
+                    Time.timeScale = 1;
+                    menuOverlay.SetActive(false);
 
-                gamePaused = false;
+                    gamePaused = false;
+                }
             }
         }
     }
@@ -52,5 +59,15 @@ public class Menu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene("Task1");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -502,7 +502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: for menu
+  m_text: to pause
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
   m_sharedMaterial: {fileID: 2822042555976253325, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
@@ -2961,7 +2961,7 @@ GameObject:
   - component: {fileID: 724955327}
   - component: {fileID: 724955326}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3034,7 +3034,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1737525010}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5430,7 +5430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159558436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.8459997, z: 5.4069214}
+  m_LocalPosition: {x: 0, y: 6.8459997, z: 7.6569214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6550,9 +6550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'exit
-
-'
+  m_text: menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
   m_sharedMaterial: {fileID: 2822042555976253325, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
@@ -7661,6 +7659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePaused: 0
   menuOverlay: {fileID: 1580919118}
+  isMenu: 0
 --- !u!1 &1844363339
 GameObject:
   m_ObjectHideFlags: 0
@@ -13207,7 +13206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: distanceBuffer
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8728139935897585087, guid: 63d17891f7d0d3f4a9142f58360c0f83, type: 3}
       propertyPath: unlockDistance
