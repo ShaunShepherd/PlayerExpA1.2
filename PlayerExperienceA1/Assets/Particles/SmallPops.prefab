@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4981033267629074024}
   - component: {fileID: 4981033267629074023}
   - component: {fileID: 4981033267629074022}
+  - component: {fileID: 1836142827764839493}
   m_Layer: 0
   m_Name: SmallPops
   m_TagString: Untagged
@@ -4879,3 +4880,34 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1836142827764839493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4981033267629074021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1330709872
+      Data2: 1253999878
+      Data3: -929898605
+      Data4: -731446537
+    Path: event:/Explosion/SmallPop
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 50

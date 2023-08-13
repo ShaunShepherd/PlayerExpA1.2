@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6411650583293988279}
   - component: {fileID: 6411650583293988276}
   - component: {fileID: 6411650583293988277}
+  - component: {fileID: 2729498521232345845}
   m_Layer: 0
   m_Name: ChargeToShoot
   m_TagString: Untagged
@@ -4812,3 +4813,34 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &2729498521232345845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6411650583293988282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1700794284
+      Data2: 1161394116
+      Data3: -1474759753
+      Data4: 1673654362
+    Path: event:/Explosion/ChargeUp
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 50

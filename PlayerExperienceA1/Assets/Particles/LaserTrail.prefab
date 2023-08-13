@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6133743831019897438}
   - component: {fileID: 2880373239527300556}
+  - component: {fileID: 4315689244922993554}
   m_Layer: 0
   m_Name: LaserTrail
   m_TagString: Untagged
@@ -221,3 +222,34 @@ TrailRenderer:
   m_MinVertexDistance: 0.01
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &4315689244922993554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492283357357926881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1266315936
+      Data2: 1112008449
+      Data3: -1686875230
+      Data4: -10329586
+    Path: event:/Explosion/LaserTrail
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 55
