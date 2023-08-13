@@ -18,6 +18,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     [SerializeField] GameObject puffParticle;
     [SerializeField] GameObject smallPopsParticle;
     [SerializeField] GameObject chargeUpParticle;
+    [SerializeField] CameraShakeController camShake;
 
     [SerializeField] float numberOfPops;
 
@@ -25,18 +26,27 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
 
     bool fired = false;
-    bool canFire = true;
+    public bool canFire = true;
 
     float popCount = 1;
 
     GameObject trailGO;
+    Animator animator;
 
     Vector3 targetVector;
+
+    FMOD.Studio.EventInstance buttonPressSound;
 
     public void Interact()
     {
         if (!fired && canFire)
         {
+            animator.SetTrigger("ButtonPress");
+
+            buttonPressSound = FMODUnity.RuntimeManager.CreateInstance("event:/Explosion/ButtonPress");
+            buttonPressSound.start();
+            buttonPressSound.release();
+
             StartCoroutine(StartSequence());
         }
     }
@@ -51,10 +61,13 @@ public class LaserExplosion : MonoBehaviour, IInteractable
         particleSpawner.SetActive(false);
 
         particleSpawner.transform.position = laserOrigin.position;
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(buttonPressSound, GetComponent<Transform>());
         if (fired && !canFire)
         {
             MoveSpawner();
@@ -66,6 +79,8 @@ public class LaserExplosion : MonoBehaviour, IInteractable
                 ParticleSpawn(initalPop);
                 ParticleSpawn(smokeParticle);
                 ParticleSpawn(puffParticle);
+
+                StartCoroutine(DelayShake());
 
                 particleSpawner.SetActive(false);
 
@@ -164,5 +179,12 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
         canFire = false;
         fired = true;
+    }
+
+    IEnumerator DelayShake()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        camShake.ShakeCamera(4, 1);
     }
 }

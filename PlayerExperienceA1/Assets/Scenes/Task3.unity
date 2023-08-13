@@ -2837,8 +2837,10 @@ MonoBehaviour:
   puffParticle: {fileID: 1577975854525367159, guid: 5e621aca0642e09428fd6e65f3af2108, type: 3}
   smallPopsParticle: {fileID: 4981033267629074021, guid: 216370f665be4a74fab6b692bb934a50, type: 3}
   chargeUpParticle: {fileID: 6411650583293988282, guid: 8bd4b39c1bef1934386e31f129bb9e2c, type: 3}
+  camShake: {fileID: 580238100}
   numberOfPops: 3
   trail: {fileID: 3492283357357926881, guid: fd7bf6499b8d927409c53086011757f8, type: 3}
+  canFire: 1
 --- !u!65 &663314305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2852,6 +2854,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: 0, y: 0, z: -0.04}
+--- !u!95 &663314306
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663314301}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4eec6032bd116a24b8f700861ab34d26, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &668318056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8739,7 +8761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89b516b1b85de77438e0e449caad0f3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.778938
+      value: -17.77894
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 89b516b1b85de77438e0e449caad0f3f, type: 3}
       propertyPath: m_LocalRotation.w
