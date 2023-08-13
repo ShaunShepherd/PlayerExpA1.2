@@ -51,8 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growing: 0
   pop: 0
-  growRate: 0.2
-  maxSize: 1.2
+  growRate: 0.3
+  maxSize: 2
   shrinkDelay: 0.7
   popParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
   camShake: {fileID: 0}
