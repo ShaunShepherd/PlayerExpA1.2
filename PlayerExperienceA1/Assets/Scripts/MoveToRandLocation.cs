@@ -19,6 +19,9 @@ public class MoveToRandLocation : MonoBehaviour
     bool swimSoundPlaying;
 
     FMOD.Studio.EventInstance swimSound;
+    FMOD.Studio.EventInstance voicelineSound;
+
+    float voicelineTimer;
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class MoveToRandLocation : MonoBehaviour
     {
         if (grow.growing)
         {
+            PlayVoiceline();
             if (Vector3.Distance(transform.position, newTarget) < .2)
             {
                 newTarget = GenRandPos(startingPos, moveableArea);
@@ -106,4 +110,19 @@ public class MoveToRandLocation : MonoBehaviour
         transform.rotation = lookAt;
     }
 
+    void PlayVoiceline()
+    {
+        if (voicelineTimer > 0)
+        {
+            voicelineTimer -= Time.deltaTime;
+        }
+        else
+        {
+            voicelineSound = FMODUnity.RuntimeManager.CreateInstance("event:/Pufferfish/FishVoicelines/FishVoiceline " + Random.Range(1,21));
+            voicelineSound.start();
+            voicelineSound.release();
+
+            voicelineTimer = Random.Range(3,5);
+        }
+    }
 }
