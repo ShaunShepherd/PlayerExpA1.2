@@ -11,7 +11,7 @@ public class PlayerInteract : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E)) 
+        if (Input.GetKeyDown(KeyCode.E)) 
         {
             if (objectsInRange.Count > 0) 
             {

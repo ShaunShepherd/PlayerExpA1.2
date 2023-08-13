@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class VaultUnlockWheel : MonoBehaviour, IInteractable
 {
+    public bool doorOpened;
     public bool startWheel;
     public bool playerInRange;
     public int rotationNumber;
@@ -19,6 +20,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     [SerializeField] ParticleSystem unlockParticles;
     [SerializeField] ParticleSystem clickParticles;
     [SerializeField] ParticleSystem failParticles;
+    [SerializeField] GameObject player;
+    [SerializeField] Transform playerHolder;
 
     FMOD.Studio.EventInstance wheelTickSound;
     FMOD.Studio.EventInstance pinUnlockSound;
@@ -28,7 +31,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     float tickCount;
     public int[] pinNumbers;
 
-    bool doorOpened;
+    public bool unlocking;
+
 
     Quaternion startingRotation;
     Animator animator;
@@ -43,11 +47,34 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        startWheel = true;
+        if (!doorOpened)
+        {
+            if (!unlocking)
+            {
+                startWheel = true;
 
-        GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
+                GeneratePinNumbers(minTicks, maxTicks, amountOfPins, pinNumbers);
 
-        rotationNumber= 0;
+                rotationNumber = 0;
+
+                player.GetComponent<PlayerMovement>().torchEquipt = true;
+
+                unlocking = true;
+
+                player.transform.position = new Vector3(playerHolder.position.x, player.transform.position.y, playerHolder.position.z);
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    unlocking = false;
+                    StartCoroutine(StopWheel());
+                    startWheel = false;
+
+                    player.GetComponent<PlayerMovement>().torchEquipt = false;
+                }
+            }
+        }
     }
 
     public void LookAt()
@@ -107,6 +134,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                             particles.transform.parent = null;
 
                             doorOpened = true;
+
+                            rotationNumber++;
                         }
                         else
                         {
@@ -120,6 +149,10 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     }
                 }
             }
+        }
+        else
+        {
+            player.GetComponent<PlayerMovement>().torchEquipt = false;
         }
   
     }
@@ -139,6 +172,19 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
         vaultLocked.release();
 
         StartCoroutine(WheelFailedDelay());
+    }
+
+    IEnumerator StopWheel()
+    {
+        startWheel = false;
+
+        yield return new WaitForSeconds(1);
+
+        rotationNumber = 0;
+
+        tickCount = 0;
+
+        wheel.transform.rotation = startingRotation;
     }
 
     IEnumerator WheelFailedDelay()
