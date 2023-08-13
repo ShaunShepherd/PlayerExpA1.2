@@ -100,7 +100,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                     {
                         pinUnlockSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultPinUnlock");
                         pinUnlockSound.start();
-                        var particles = Instantiate(clickParticles, transform);
+                        var particles = Instantiate(clickParticles, transform.parent);
                         particles.transform.parent = null;
                         pinUnlockSound.release();
                     }
@@ -130,7 +130,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
                         if (rotationNumber == amountOfPins - 1)
                         {
                             animator.SetTrigger("DoorOpen");
-                            var particles = Instantiate(unlockParticles, transform);
+                            var particles = Instantiate(unlockParticles, transform.parent);
                             particles.transform.parent = null;
 
                             doorOpened = true;
@@ -170,6 +170,8 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
         vaultLocked = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultLocked(failed)");
         vaultLocked.start();
         vaultLocked.release();
+        var particles = Instantiate(failParticles, transform.parent);
+        particles.transform.parent = null;
 
         StartCoroutine(WheelFailedDelay());
     }

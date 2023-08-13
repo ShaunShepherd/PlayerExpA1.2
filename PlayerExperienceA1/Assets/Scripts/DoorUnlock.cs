@@ -48,5 +48,6 @@ public class DoorUnlock : MonoBehaviour
         yield return new WaitForSeconds(7);
 
         animator.SetTrigger("OpenDoor");
+        animator.SetTrigger("TorchPulse");
     }
 }

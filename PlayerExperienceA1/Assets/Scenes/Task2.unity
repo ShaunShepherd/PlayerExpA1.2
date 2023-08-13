@@ -500,6 +500,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundDrag: 15
+  lerpSpeed: 0
   orientation: {fileID: 573400779}
 --- !u!54 &323944700
 Rigidbody:
@@ -8891,9 +8892,9 @@ MonoBehaviour:
   amountOfPins: 5
   minTicks: 4
   maxTicks: 12
-  unlockParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
-  clickParticles: {fileID: 5222348557320626952, guid: f9749670fd169a445aa661c6aff9c4b6, type: 3}
-  failParticles: {fileID: 0}
+  unlockParticles: {fileID: 2701036601389336148, guid: 37ec2109f4b57cb4aabf25a16962ef43, type: 3}
+  clickParticles: {fileID: 2701036601389336148, guid: e6cf6a28b28b880418007196478dbdb2, type: 3}
+  failParticles: {fileID: 2701036601389336148, guid: b9935f72c26b11b43a31bac114d2af64, type: 3}
   player: {fileID: 323944697}
   playerHolder: {fileID: 1769625384}
   pinNumbers: 
