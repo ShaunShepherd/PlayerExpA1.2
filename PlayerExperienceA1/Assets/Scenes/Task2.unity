@@ -7169,7 +7169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: for menu
+  m_text: to pause
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
   m_sharedMaterial: {fileID: 2822042555976253325, guid: 4f65a39bdf72b9c47b999cebd2509fa1, type: 2}
@@ -8485,7 +8485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724557571250340033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0059105675, y: -0.0034759443, z: 0.00068075006}
+  m_LocalPosition: {x: -0.0059105675, y: -0.0034759443, z: 0.0006807501}
   m_LocalScale: {x: 0.60339266, y: 0.60339266, z: 0.61943555}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8935,7 +8935,7 @@ MonoBehaviour:
   wheel: {fileID: 724557571250340033}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
-  amountOfPins: 1
+  amountOfPins: 5
   minTicks: 4
   maxTicks: 12
   tickParticles: {fileID: 4108143457465364116, guid: 7ebfd2579d19f2f4e8bcb6286435bb13, type: 3}

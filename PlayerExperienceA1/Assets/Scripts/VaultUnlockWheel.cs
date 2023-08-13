@@ -28,6 +28,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     FMOD.Studio.EventInstance pinUnlockSound;
     FMOD.Studio.EventInstance vaultLocked;
     FMOD.Studio.EventInstance doorOpenSound;
+    FMOD.Studio.EventInstance handleRespin;
 
     float wheelTickTimer;
     float tickCount;
@@ -87,6 +88,7 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
     void Update()
     {
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(doorOpenSound, smallWheel);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(handleRespin, smallWheel);
 
         if (!doorOpened) 
         {
@@ -189,6 +191,13 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
     IEnumerator StopWheel()
     {
+        animator.SetTrigger("Respin");
+
+        handleRespin = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultDoorRespin");
+        handleRespin.start();
+
+        handleRespin.release();
+
         startWheel = false;
 
         yield return new WaitForSeconds(1);
@@ -202,6 +211,13 @@ public class VaultUnlockWheel : MonoBehaviour, IInteractable
 
     IEnumerator WheelFailedDelay()
     {
+        animator.SetTrigger("Respin");
+
+        handleRespin = FMODUnity.RuntimeManager.CreateInstance("event:/Vault/VaultDoorRespin");
+        handleRespin.start();
+
+        handleRespin.release();
+
         startWheel = false;
 
         yield return new WaitForSeconds(1);
