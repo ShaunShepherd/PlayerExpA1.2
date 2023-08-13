@@ -36,6 +36,9 @@ public class MoveToRandLocation : MonoBehaviour
 
     void Update()
     {
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(swimSound, GetComponent<Transform>());
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(voicelineSound, GetComponent<Transform>());
+
         if (grow.growing)
         {
             PlayVoiceline();

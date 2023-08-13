@@ -78,7 +78,7 @@ public class DoorUnlock : MonoBehaviour
 
         StartCoroutine(DelayParticle());
 
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(5.7f);
 
         for (int i = 0; i < planets.Count; i++)
         {

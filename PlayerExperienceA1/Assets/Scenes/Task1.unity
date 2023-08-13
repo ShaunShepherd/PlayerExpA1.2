@@ -959,7 +959,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 25
 --- !u!23 &213737146
 MeshRenderer:
   m_ObjectHideFlags: 0

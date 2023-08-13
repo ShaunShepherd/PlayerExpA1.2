@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.745308, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3994,7 +3994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.745308, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4406,6 +4406,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1358381780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358381781}
+  - component: {fileID: 1358381782}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358381781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358381780}
+  m_LocalRotation: {x: -0, y: 0.25881857, z: -0, w: 0.96592593}
+  m_LocalPosition: {x: 0.00894, y: -0.00365, z: -0.00125}
+  m_LocalScale: {x: 0.030994982, y: 0.030994982, z: 0.030994982}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2113230010}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!65 &1358381782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358381780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1362428452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,7 +4502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.745308, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5572,7 +5617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.745308, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5814,7 +5859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.745308, b: 0.015723169, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7792,6 +7837,7 @@ Transform:
   - {fileID: 2141421930}
   - {fileID: 1146292822}
   - {fileID: 1889057432}
+  - {fileID: 1358381781}
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8889,14 +8935,15 @@ MonoBehaviour:
   wheel: {fileID: 724557571250340033}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
-  amountOfPins: 5
+  amountOfPins: 1
   minTicks: 4
   maxTicks: 12
-  unlockParticles: {fileID: 2701036601389336148, guid: 37ec2109f4b57cb4aabf25a16962ef43, type: 3}
-  clickParticles: {fileID: 2701036601389336148, guid: e6cf6a28b28b880418007196478dbdb2, type: 3}
-  failParticles: {fileID: 2701036601389336148, guid: b9935f72c26b11b43a31bac114d2af64, type: 3}
+  tickParticles: {fileID: 4108143457465364116, guid: 7ebfd2579d19f2f4e8bcb6286435bb13, type: 3}
+  pinParticles: {fileID: 5867810516940675602, guid: 1b06cb037ac50da48b532b1f3f7af8c7, type: 3}
+  failParticles: {fileID: 1927899927726047589, guid: d7de793c057ec5f46a434383fee8dea6, type: 3}
   player: {fileID: 323944697}
   playerHolder: {fileID: 1769625384}
+  smallWheel: {fileID: 4433623463231884076}
   pinNumbers: 
   unlocking: 0
 --- !u!114 &8919395924578876228
