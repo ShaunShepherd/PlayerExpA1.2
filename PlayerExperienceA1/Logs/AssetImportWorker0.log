@@ -2864,3 +2864,93 @@ Received Import Request.
   path: Assets/Particles/InitalPop 1.prefab
   artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Particles/InitalPop 1.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909229bd48367d06c98d2b1e9191d725') in 0.008580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 172.296311 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c92f771a87c0681a1a540b9bd6bf8c') in 0.019228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.537362 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc3c4333b9bac98fa41dc949427ec7c') in 0.014536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.333260 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d55afb8a37c66e7b0321ccffcb61f5') in 0.027570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.983430 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7a52a3fe4ec687ed358d90fc2f0dc8') in 0.010077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 251.827379 seconds.
+  path: Assets/Models/Ring.fbx
+  artifactKey: Guid(15fc12729a947934da96bb5a13b92571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ring.fbx using Guid(15fc12729a947934da96bb5a13b92571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3495a6f4af3fea9f9bd0a48d2c0cc18d') in 0.036890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.290075 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593fc4bd5235657a52ea16be93c3174e') in 0.030484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.253283 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9565a89f2d856609794968f1530bec6') in 0.009357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.417899 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49b718a90c051e7ee50e599b2bbcc1a') in 0.009469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.533853 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bee70ccd486ff4437ba447254832fb1') in 0.015420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.728557 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22a4c22fe8acde4942c086e63772efb') in 0.005788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.317982 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30db393836464cc24568cd324ff01fa0') in 0.004984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.902654 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f60cb5dce2176db246ea4adac9162e0') in 0.016280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.630697 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4d72cb9584d230e06dc46bba50e23b') in 0.005629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.482982 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6893040cce2f6145a6fbcb95cbb828e8') in 0.009095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.538652 seconds.
+  path: Assets/Particles/SmallPops.prefab
+  artifactKey: Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/SmallPops.prefab using Guid(216370f665be4a74fab6b692bb934a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997aaa6a941ac6055e7b52f5d85e882d') in 0.010694 seconds 
