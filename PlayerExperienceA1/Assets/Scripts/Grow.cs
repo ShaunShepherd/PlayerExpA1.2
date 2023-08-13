@@ -41,6 +41,9 @@ public class Grow : MonoBehaviour, IInteractable
 
     void Update()
     {
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(inflateSound, GetComponent<Transform>());
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(deflateSound, GetComponent<Transform>());
+
         if (transform.localScale.x > previousScale)
         {
             growing = true;
