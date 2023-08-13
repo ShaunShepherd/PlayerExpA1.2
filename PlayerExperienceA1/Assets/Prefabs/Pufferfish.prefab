@@ -50,8 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growing: 0
-  growRate: 0.2
-  maxSize: 1.2
+  pop: 0
+  growRate: 0.4
+  maxSize: 2.5
   shrinkDelay: 0.7
   popParticles: {fileID: 5222348557320626952, guid: e7847bc3e85b1ba4c87571117332383e, type: 3}
 --- !u!114 &1772898272487132670
@@ -66,10 +67,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b017c4deeb9b14aa41218f9692eead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveableArea: 2
+  moveableArea: 3
   moveSpeed: 2
   player: {fileID: 0}
   animator: {fileID: 1772898272741808875}
+  startingPos: {x: 0, y: 0, z: 0}
 --- !u!135 &1772898272487132668
 SphereCollider:
   m_ObjectHideFlags: 0
