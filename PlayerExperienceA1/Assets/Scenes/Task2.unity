@@ -225,6 +225,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15037610b326cbd42bbb3ec9a49fd730, type: 3}
+--- !u!1 &289533242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289533243}
+  m_Layer: 0
+  m_Name: lockWheel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289533243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289533242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.005910593, y: -0.0034759438, z: 0.0006807499}
+  m_LocalScale: {x: 0.60339266, y: 0.60339266, z: 0.6194354}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4433623463231884076}
+  m_Father: {fileID: 1778689560977308166}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289555489
 GameObject:
   m_ObjectHideFlags: 0
@@ -6025,6 +6057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePaused: 0
   menuOverlay: {fileID: 1349698798}
+  isMenu: 0
 --- !u!1 &1762642948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,7 +8390,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3527768624362291234}
-  - {fileID: 4433623463231884076}
+  - {fileID: 289533243}
   - {fileID: 1622360471}
   m_Father: {fileID: 35840655}
   m_RootOrder: 1
@@ -8485,12 +8518,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724557571250340033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0059105675, y: -0.0034759443, z: 0.0006807501}
-  m_LocalScale: {x: 0.60339266, y: 0.60339266, z: 0.61943555}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1778689560977308166}
-  m_RootOrder: 1
+  m_Father: {fileID: 289533243}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4726417593757725909
 Transform:
@@ -8932,7 +8965,7 @@ MonoBehaviour:
   startWheel: 0
   playerInRange: 0
   rotationNumber: 0
-  wheel: {fileID: 724557571250340033}
+  wheel: {fileID: 289533242}
   rotationSpeed: 50
   wheelTickIncrements: 0.5
   amountOfPins: 5
@@ -9003,9 +9036,9 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0fa6c538544391b4d805f0d8181674d4, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 

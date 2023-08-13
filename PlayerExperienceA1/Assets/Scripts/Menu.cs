@@ -11,8 +11,11 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
-        menuOverlay.SetActive(false);
-        gamePaused = false;
+        if (!isMenu)
+        {
+            menuOverlay.SetActive(false);
+            gamePaused = false;
+        }
 
         Time.timeScale = 1;
     }
@@ -61,5 +64,10 @@ public class Menu : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene("Task1");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

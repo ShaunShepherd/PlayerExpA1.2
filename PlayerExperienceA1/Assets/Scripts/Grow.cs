@@ -126,6 +126,11 @@ public class Grow : MonoBehaviour, IInteractable
 
             inflateSoundPlaying = false;
 
+            deflateSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            deflateSound.release();
+
+            deflateSoundPlaying = false;
+
             camShake.ShakeCamera(4, 0.8f);
 
             var particles = Instantiate(popParticles, transform);
