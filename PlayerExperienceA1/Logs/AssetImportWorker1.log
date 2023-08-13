@@ -2215,3 +2215,95 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004134 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\GitHub\PlayerExpA1.2\PlayerExperienceA1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\GitHub\PlayerExpA1.2\PlayerExperienceA1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.670 seconds
+Domain Reload Profiling:
+	ReloadAssembly (670ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (530ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (163ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.90 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3695 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 79 unused Assets / (96.4 KB). Loaded Objects now: 4672.
+Memory consumption went from 136.3 MB to 136.3 MB.
+Total: 2.137700 ms (FindLiveObjects: 0.200500 ms CreateObjectMapping: 0.100900 ms MarkObjects: 1.793800 ms  DeleteObjects: 0.041600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1235.158861 seconds.
+  path: Assets/Materials/Water.mat
+  artifactKey: Guid(f86acbdc1bb32754284dbe63cad922f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Water.mat using Guid(f86acbdc1bb32754284dbe63cad922f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b404be70ebc36c936a27d90d287090df') in 0.102850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Materials/VaultSpark.mat
+  artifactKey: Guid(d38ee43b854fc324cb5fbcda94682ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/VaultSpark.mat using Guid(d38ee43b854fc324cb5fbcda94682ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd609cd55826229357e810c2ea4f4c8') in 0.017541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.096241 seconds.
+  path: Assets/Materials/Fish Tank.mat
+  artifactKey: Guid(338b11f19d9b9a54d889efa767e4a616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Fish Tank.mat using Guid(338b11f19d9b9a54d889efa767e4a616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd424787b4a2f7408b5b21d5149620b') in 0.016243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018373 seconds.
+  path: Assets/Materials/BallColorsRedYellow.mat
+  artifactKey: Guid(fd48a16b8bdfaee4ab8ad9aed44e999a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BallColorsRedYellow.mat using Guid(fd48a16b8bdfaee4ab8ad9aed44e999a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332363755c51a5d0fb55cbd125a85a7d') in 0.018370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/BallColorsRed.mat
+  artifactKey: Guid(86d882cbf3efd3747a41b52a01aca59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BallColorsRed.mat using Guid(86d882cbf3efd3747a41b52a01aca59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f919df5efed61641a8921a5e0e70895') in 0.012687 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65165668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03999996, y: 1.75, z: -10.59}
+  m_LocalPosition: {x: -0.03999996, y: 1.75, z: -27.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1705,7 +1705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323944697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -11.1}
+  m_LocalPosition: {x: 0, y: 1, z: -27.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3358,7 +3358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889712407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13000011, y: 8.48, z: -45.3}
+  m_LocalPosition: {x: -0.13000011, y: 8.48, z: -36.05}
   m_LocalScale: {x: 45.872, y: 17.138, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4102,6 +4102,25 @@ MonoBehaviour:
   - {fileID: 2058210939}
   - {fileID: 1408271656}
   - {fileID: 1030220513}
+  planets:
+  - {fileID: 2133717775}
+  - {fileID: 1461112989}
+  - {fileID: 38845694}
+  - {fileID: 430431001}
+  - {fileID: 152753543}
+  - {fileID: 997056454}
+  - {fileID: 1844363339}
+  - {fileID: 1593432735}
+  particleEffects:
+  - {fileID: 6322675265555450776, guid: cca5a342f4174e7458649abd3c19ed3c, type: 3}
+  - {fileID: 3556070650968943076, guid: 7c792589bfd183d4cb4334c3d953368c, type: 3}
+  - {fileID: 8837526747250574072, guid: eae4dfa9b29f63f4a99506646d476e0a, type: 3}
+  - {fileID: 8824599460000926106, guid: 42200129cbd465c4db80e38cdebcd472, type: 3}
+  - {fileID: 8426782232586213905, guid: 8db6b348eba7dda4fbc33300fafe5b62, type: 3}
+  - {fileID: 7888869390943430148, guid: 6b6b0f64d4ae4bd40a0193adbf214bcd, type: 3}
+  - {fileID: 4150478793244632412, guid: 56c5ecd796e42994b9f20e49bdb0e1c0, type: 3}
+  - {fileID: 7674050728516370651, guid: eacb0533b630fc340801ea7a7a3124c3, type: 3}
+  camShake: {fileID: 620293314}
 --- !u!1 &986516773
 GameObject:
   m_ObjectHideFlags: 3
