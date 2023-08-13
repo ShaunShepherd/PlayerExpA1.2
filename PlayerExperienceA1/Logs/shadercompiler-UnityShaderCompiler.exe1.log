@@ -8,3 +8,4 @@ Cmd: compileComputeKernel
 
 
 
+Cmd: shutdown
