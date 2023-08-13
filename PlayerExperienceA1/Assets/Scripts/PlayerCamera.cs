@@ -8,6 +8,7 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] float sensY;
 
     [SerializeField] Transform orientation;
+    [SerializeField] Menu menu;
 
     float xRotation;
     float yRotation;
@@ -32,5 +33,16 @@ public class PlayerCamera : MonoBehaviour
         // rotate cam and player
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+
+        if (menu.gamePaused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 }

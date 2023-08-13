@@ -15,10 +15,11 @@ public class PinUI : MonoBehaviour
 
     void Update()
     {
-        if (unlockWheel.startWheel) 
+        if (unlockWheel.unlocking) 
         {
             int numUnlcoked = unlockWheel.rotationNumber;
 
+            Debug.Log(numUnlcoked);
             for (int i = 0; i < pins.Count; i++)
             {
                 if (numUnlcoked > 0)

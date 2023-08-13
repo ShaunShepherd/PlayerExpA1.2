@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundedAllowance;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float groundDrag;
+    [SerializeField] float lerpSpeed;
 
 
     [Header("References")]
@@ -103,6 +104,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveToPos(Transform targetPos)
     {
-        transform.position = new Vector3(targetPos.position.x, transform.position.y, targetPos.position.z);
+        Vector3 targetVector = new Vector3(targetPos.position.x, transform.position.y, targetPos.position.z);
+
+        //if (Vector3.Distance(targetVector, transform.position) > 0.1)
+       // {
+           // transform.position = Vector3.Lerp(transform.position, targetVector, lerpSpeed);
+       // }
+
+        transform.position = targetVector;
     }
 }
