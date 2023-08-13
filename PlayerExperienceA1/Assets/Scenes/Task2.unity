@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 289555492}
   - component: {fileID: 289555491}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1737525011}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
