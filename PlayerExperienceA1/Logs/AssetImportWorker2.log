@@ -1221,3 +1221,528 @@ Received Import Request.
   path: Assets/Materials/VaultUnlock.mat
   artifactKey: Guid(2dd65531e5205174ba27d67ca8788226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/VaultUnlock.mat using Guid(2dd65531e5205174ba27d67ca8788226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb846a14ad44895e0ebbcecb34ec9e2') in 0.024701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.884013 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45156221e968502f9402b05ec00e18f7') in 0.077678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.812734 seconds.
+  path: Assets/Prefabs/Trail.prefab
+  artifactKey: Guid(c93f048cca47c8a4f9daf02f21b80ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trail.prefab using Guid(c93f048cca47c8a4f9daf02f21b80ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc06cbe06bf8f952daa014d12b92ea37') in 0.012864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.090575 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08eaa8ea0a0b6272424a8693445484d9') in 0.036896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.879756 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e707e27d8d74d397f7198823c252d3c') in 0.083488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.066156 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b790fecad9aedbcaa5b144e9427b371') in 0.064234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.149935 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e85d55384b22641579099d0f1ce7e8') in 0.028670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.027990 seconds.
+  path: Assets/Sprites/Materials/CircleExplosion.mat
+  artifactKey: Guid(792bb3f0e7715a940b627045a3130e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Materials/CircleExplosion.mat using Guid(792bb3f0e7715a940b627045a3130e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad6db7bb57d57baf1c1a86fa4c001f7') in 0.029629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.447810 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7d934cafc5ce8484a1e63ff0d1a2db') in 0.033489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.155707 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bbf5aaf703c98063a7b3d9b7ee276c') in 0.035731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.790281 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63337c3938af09c1f9aafb76bb557581') in 0.038588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.303968 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e90693742ca4b63929b28942f636d8a') in 0.034010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.669113 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792f5cb2d4e46203c43ad83aafc151aa') in 0.025799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.262952 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01514bfd4b1dcff52ae9fa4204def21') in 0.033942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.082889 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39ea03f3ce19b2f2f23ea2e82a26e63') in 0.027978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.836016 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6597daa14fa888700a91a66200665b5') in 0.035680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.971747 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce11a2bdf2a5e11cf8a480f141fce1a') in 0.036260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.154674 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66f041c0fdf8f5390f16f53f69b5edc') in 0.029735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.192423 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ef86c2122659a5fb199ef79de5656d') in 0.034686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.188611 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7536b7905c6b84f56bb0bf6bbe4109') in 0.034273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.263757 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52fea4daff10a0044555b1ba2d64446e') in 0.030958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.660627 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6afea63b85fed702b840c33b5e2dd8f') in 0.027969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.846377 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622a0ed220fa035f5dc8f03398f62fca') in 0.036482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.394311 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841d80d9c0d6dc35440f3e86a2f0de14') in 0.036028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.645616 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c842b0b07b7f6c725289aa81a1cd5d90') in 0.034646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.433869 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165eae2bb72d5dbba4daa76710c42017') in 0.035811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.510597 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438aef8283d24f78d7b2e7de1df0936f') in 0.027323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.243390 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a495cbf9ef7f063fe12ad4c87bbf3f6') in 0.033520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.596194 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161aa3406200d53f0eb15dd822b14dd4') in 0.035553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.106127 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2526eb3e734ff7d960aa8c34152991cd') in 0.023347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.512946 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668884dc032a61b70b497ebc21efbd1c') in 0.035857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.700720 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22a1e30a62d726548a644b8d7d84955') in 0.037536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.066483 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77e22c9aabeb4a7095fa1bb5d103ba9') in 0.034815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.481177 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b68cf8c5f43337f32baa532e8c4a19a') in 0.033345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.063587 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb9c5d5cc97dc845578e01c61e72011') in 0.035832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.201587 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ea580be5e6279c51b16c39b50bd612') in 0.036454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.171397 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f30d2824621dd54daea2b78cc8fe6c') in 0.024068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.806202 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e98166b8e9a1bd896f02594aa17e609') in 0.036650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.876853 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c51d9f526aa81240fd093d6462664e') in 0.033996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.650868 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f6accf05c4acbd397ae2aadd4567d0') in 0.032854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.806480 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14dc455327e15caa5ba30af47a424ea') in 0.035153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.810820 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14fe5c893e12e979f2090fa4799da55') in 0.034044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.623992 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c5fd6769c512b197ccdfb7d9804715') in 0.035526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.160122 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b8360b19db3faa6bd15b2f69ade02f') in 0.033149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.398347 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a154b963600acfcb80f7eaba99c22c') in 0.036816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.287695 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e11c332bb0a42fd1bfcb3151df2da8') in 0.033756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.556657 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8f971d60f83a192d088bb43bcdc041') in 0.035238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.632719 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4122d197e3fd3204b43fbade2c581') in 0.033101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.711280 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bec565022081c5508c65dcd6eec612f') in 0.031782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.660618 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5e69b76f6f6dfb2c8c1fcfab98ccd9') in 0.032634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.766821 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19984bf104318dbfa7b252f08802f8d4') in 0.032261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.810830 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44eae81b212a1238214a84fa325cd4a3') in 0.035667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.005207 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c08aeb3e4fca32cc5f5e4456ebf64f3') in 0.035389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.189510 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe7c8a17ed66c9a72fafff635ee282b') in 0.027876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.911321 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68b0db1d719c6c84fa86d053c9b0232') in 0.034566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.877454 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295c82109b632eff6285132ab2d28b07') in 0.027772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.652335 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea203fc3ae22483cc1b81932e58aa13') in 0.034974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.997082 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43d766d3e7df7a717460feb2efbcb0e') in 0.025787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.517767 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd6d6746111197f975183ed0dae889e') in 0.035869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.512448 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9195ccef65ddf9c4101069eecd2ad9a6') in 0.024839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.436388 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4afedf498d929b3ee1474a8396f6f75') in 0.025992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.082410 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7df22e1e8bc05e10bd95e09331aa6af') in 0.034813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.674419 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7053c0f20ba7997ec20141ab10cdf7') in 0.026723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.697711 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920830cecd19b3821c4c541e2b4a6f11') in 0.025002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.303333 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3e85c84329f1ae261f5c15bfc77032') in 0.032772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.771431 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274c458798e0df13c83f9ca92fc84163') in 0.025101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.253379 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24506909c142b006ee2ea2ab1f36af4') in 0.035073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.100000 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc688fc924a099f442b9980f4748118') in 0.026313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.847034 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87de44dba8e37544f665a3335009e19e') in 0.035984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.845925 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e47fe89d5f1e0a6f6891269b6938fd') in 0.032920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.995359 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efffeeadefeab3615863ab65878274d') in 0.035253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.798792 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f1acdfc9ce6df045b90eb480391b9e') in 0.030387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.579642 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e5e78377abee4c7b845f2a5ea5ef40') in 0.033986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.759743 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c100622e7fb9342d706fbedac2a75ab8') in 0.034504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.608608 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45679a97136a03a1907402baac5bda1e') in 0.035076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.795632 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94613218b44fdedc8234921831ace92') in 0.035465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.723795 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb5ed89dbb6b4b5aed3ef785e9a4fc16') in 0.024779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.235410 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e041de55e896fa56266beba6a86db4f') in 0.033305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.771130 seconds.
+  path: Assets/Prefabs/Pufferfish.prefab
+  artifactKey: Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pufferfish.prefab using Guid(bc1de9af157cd784a94eb9e5422f1503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcd6645a2f2023099e1efe341298a48') in 0.033754 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004692 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\hayde\Documents\GitHub\PlayerExpA1.2\PlayerExperienceA1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\hayde\Documents\GitHub\PlayerExpA1.2\PlayerExperienceA1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Domain Reload Profiling:
+	ReloadAssembly (944ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (759ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (388ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (303ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.92 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3695 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (122.6 KB). Loaded Objects now: 4404.
+Memory consumption went from 136.4 MB to 136.3 MB.
+Total: 3.070300 ms (FindLiveObjects: 0.273700 ms CreateObjectMapping: 0.094500 ms MarkObjects: 2.592400 ms  DeleteObjects: 0.108500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
