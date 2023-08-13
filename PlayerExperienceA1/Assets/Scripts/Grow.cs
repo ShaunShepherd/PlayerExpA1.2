@@ -123,7 +123,7 @@ public class Grow : MonoBehaviour, IInteractable
 
             inflateSoundPlaying = false;
 
-            camShake.ShakeCamera(4, 1);
+            camShake.ShakeCamera(4, 0.8f);
 
             var particles = Instantiate(popParticles, transform);
             particles.transform.parent = null;

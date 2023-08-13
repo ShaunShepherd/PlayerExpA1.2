@@ -26,7 +26,8 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
 
     bool fired = false;
-    public bool canFire = true;
+    bool canFire = true;
+    bool playerInRange;
 
     float popCount = 1;
 
@@ -48,6 +49,8 @@ public class LaserExplosion : MonoBehaviour, IInteractable
             buttonPressSound.release();
 
             StartCoroutine(StartSequence());
+
+            uiText.gameObject.SetActive(false);
         }
     }
 
@@ -84,6 +87,8 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
                 particleSpawner.SetActive(false);
 
+                fired = false;
+
                 particleSpawner.transform.position = laserOrigin.position;
 
                 SpawnExplosion(explosionSpawn.position);
@@ -95,6 +100,15 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
             }
         }
+
+        if (playerInRange && canFire)
+        {
+            uiText.gameObject.SetActive(true);
+        }
+        else
+        {
+            uiText.gameObject.SetActive(false);
+        }
     }
 
 
@@ -102,7 +116,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            uiText.gameObject.SetActive(true);
+            playerInRange = true;
         }
     }
 
@@ -110,7 +124,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            uiText.gameObject.SetActive(false);
+            playerInRange = false;
         }
     }
 
@@ -138,15 +152,6 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
     void MoveSpawner()
     {
-        if (Vector3.Distance(trailGO.transform.position, particleSpawner.transform.position) < 0.1)
-        {
-            //trailGO.transform.position = laserEnd.position;
-        }
-
-        Debug.Log("The pop count " + numberOfPops);
-
-        Debug.Log("The pop inc dist: " + (popCount / numberOfPops * Vector3.Distance(laserOrigin.position, laserEnd.position)));
-
         if (Vector3.Distance(particleSpawner.transform.position, laserOrigin.position) > (popCount/numberOfPops * Vector3.Distance(laserOrigin.position, laserEnd.position)))
         {
             ParticleSpawn(smallPopsParticle);
@@ -165,9 +170,13 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
     IEnumerator StartSequence()
     {
+        canFire = false;
+
         ParticleSpawn(chargeUpParticle);
 
         yield return new WaitForSeconds(3);
+
+        fired = true;
 
         ParticleSpawn(smallPopsParticle);
 
@@ -176,15 +185,13 @@ public class LaserExplosion : MonoBehaviour, IInteractable
         trailGO = Instantiate(trail, particleSpawner.transform);
 
         targetVector = laserEnd.position - laserOrigin.position;
-
-        canFire = false;
-        fired = true;
     }
 
     IEnumerator DelayShake()
     {
         yield return new WaitForSeconds(0.3f);
 
-        camShake.ShakeCamera(4, 1);
+        camShake.ShakeCamera(4, 0.8f);
+        canFire = true;
     }
 }
