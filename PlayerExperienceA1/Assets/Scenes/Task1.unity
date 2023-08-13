@@ -1441,6 +1441,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundDrag: 15
+  lerpSpeed: 1
   orientation: {fileID: 573400779}
 --- !u!54 &323944700
 Rigidbody:

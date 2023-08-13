@@ -14,7 +14,8 @@ public class TorchMove : MonoBehaviour
     [SerializeField] float unlockDistance;
     [SerializeField] float distanceBuffer;
     [SerializeField] float hummBuffer;
-     
+    [SerializeField] float lockedOffLerpSpeed;
+
     bool equipt = false;
     bool playerInTrigger;
     bool dragSoundPlaying;
