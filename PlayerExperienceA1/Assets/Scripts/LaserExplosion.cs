@@ -16,12 +16,18 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     [SerializeField] GameObject initalPop;
     [SerializeField] GameObject smokeParticle;
     [SerializeField] GameObject puffParticle;
+    [SerializeField] GameObject smallPopsParticle;
+    [SerializeField] GameObject chargeUpParticle;
+
+    [SerializeField] float numberOfPops;
 
     [SerializeField] GameObject trail;
-    
+
 
     bool fired = false;
     bool canFire = true;
+
+    float popCount = 1;
 
     GameObject trailGO;
 
@@ -31,14 +37,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     {
         if (!fired && canFire)
         {
-            particleSpawner.SetActive(true);
-
-            trailGO = Instantiate(trail, particleSpawner.transform);
-
-            targetVector = laserEnd.position - laserOrigin.position;
-
-            canFire = false;
-            fired = true;
+            StartCoroutine(StartSequence());
         }
     }
 
@@ -76,6 +75,8 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
                 canFire = true;
                 fired = false;
+
+                popCount = 1;
 
             }
         }
@@ -127,6 +128,17 @@ public class LaserExplosion : MonoBehaviour, IInteractable
             //trailGO.transform.position = laserEnd.position;
         }
 
+        Debug.Log("The pop count " + numberOfPops);
+
+        Debug.Log("The pop inc dist: " + (popCount / numberOfPops * Vector3.Distance(laserOrigin.position, laserEnd.position)));
+
+        if (Vector3.Distance(particleSpawner.transform.position, laserOrigin.position) > (popCount/numberOfPops * Vector3.Distance(laserOrigin.position, laserEnd.position)))
+        {
+            ParticleSpawn(smallPopsParticle);
+
+            popCount++;
+        }
+
         particleSpawner.transform.Translate(targetVector.normalized * Time.deltaTime * laserMoveSpeed);
     }
 
@@ -134,6 +146,23 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     {
         var initalPopPar = Instantiate(go, particleSpawner.transform);
         initalPopPar.transform.parent = null;
+    }
 
+    IEnumerator StartSequence()
+    {
+        ParticleSpawn(chargeUpParticle);
+
+        yield return new WaitForSeconds(3);
+
+        ParticleSpawn(smallPopsParticle);
+
+        particleSpawner.SetActive(true);
+
+        trailGO = Instantiate(trail, particleSpawner.transform);
+
+        targetVector = laserEnd.position - laserOrigin.position;
+
+        canFire = false;
+        fired = true;
     }
 }
