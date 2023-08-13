@@ -15,6 +15,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     [SerializeField] GameObject particleSpawner;
     [SerializeField] GameObject initalPop;
     [SerializeField] GameObject smokeParticle;
+    [SerializeField] GameObject puffParticle;
 
     [SerializeField] GameObject trail;
     
@@ -65,6 +66,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
 
                 ParticleSpawn(initalPop);
                 ParticleSpawn(smokeParticle);
+                ParticleSpawn(puffParticle);
 
                 particleSpawner.SetActive(false);
 
@@ -122,7 +124,7 @@ public class LaserExplosion : MonoBehaviour, IInteractable
     {
         if (Vector3.Distance(trailGO.transform.position, particleSpawner.transform.position) < 0.1)
         {
-            trailGO.transform.position = laserEnd.position;
+            //trailGO.transform.position = laserEnd.position;
         }
 
         particleSpawner.transform.Translate(targetVector.normalized * Time.deltaTime * laserMoveSpeed);

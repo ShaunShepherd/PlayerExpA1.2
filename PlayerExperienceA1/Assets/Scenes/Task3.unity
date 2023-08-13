@@ -1524,7 +1524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionRadius: 15
   explosionForce: 2000
-  laserMoveSpeed: 25
+  laserMoveSpeed: 30
   uiText: {fileID: 217594391}
   explosionSpawn: {fileID: 1998382623}
   laserOrigin: {fileID: 840064935}
